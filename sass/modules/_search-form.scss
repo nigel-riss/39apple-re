@@ -1,0 +1,40 @@
+.search-form {
+    // positioning
+    position: relative;
+
+    // box model
+    float: right;
+
+    &__input {
+        // box model
+        height: 36px;
+        width: 500px;
+        padding-left: 20px;
+        padding-right: 40px;
+        
+        // visual
+        border: none;
+        outline: none;
+        border-radius: 18px;
+    }
+
+    &__button {
+        // positioning
+        position: absolute;
+        right: 12px;
+        top: 6px;
+
+        // box model
+        height: 24px;
+        width: 24px;
+
+        // typography
+        font-size: 0;
+        
+        // visual
+        background-image: url(../img/search.svg);
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+}
