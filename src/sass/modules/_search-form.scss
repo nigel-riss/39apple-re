@@ -8,14 +8,23 @@
     &__input {
         // box model
         height: 36px;
-        width: 500px;
+        width: 300px;
         padding-left: 20px;
         padding-right: 40px;
+
+        // typography
+        text-align: center;
         
         // visual
         border: none;
         outline: none;
         border-radius: 18px;
+        transition: width 0.5s ease;
+
+        &:focus {
+            // box model
+            width: 500px;
+        }
     }
 
     &__button {
@@ -36,5 +45,6 @@
         background-color: transparent;
         border: none;
         outline: none;
+        cursor: pointer;
     }
 }

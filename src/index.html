@@ -8,6 +8,9 @@
 </head>
 
 <body>
+    <!--
+        Header with contacts
+    -->
     <header class="page-header">
         <canvas id="canvasss" class="page-header__canvas"></canvas>
         <div class="container  container--relative-z-1">
@@ -33,14 +36,14 @@
                     <div class="contact__icon  contact__icon--call"></div>
                     <div class="contact__info  contact__info--call">
                         Магазин: <span class="contact__phone"><a href="tel:84012900310">8 (4012) 900-310</a></span><br> Сервис:
-                        <span class="contact__phone"><a href="tel:84012900300">8 (4012) 900-300</a></span>
+                        <span class="contact__phone  contact__phone--ml"><a href="tel:84012900300">8 (4012) 900-300</a></span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <!--
-
+        Main navigation with search
     -->
     <nav class="main-nav">
         <canvas id="canvasss" class="main-nav__canvas"></canvas>
@@ -64,54 +67,57 @@
             </ul>
 
             <form class="search-form" action="/search/">
-                <input class="search-form__input" type="text">
+                <input class="search-form__input" type="text" placeholder="поиск по сайту">
                 <button class="search-form__button" type="submit">Найти</button>
             </form>
         </div>
     </nav>
     <!--
-
+        Fast navigation for catalog
     -->
     <nav class="fast-nav">
         <div class="container">
             <ul>
                 <li>
-                    <a href="#">телефоны</a>
+                    <a href="#"><img src="img/icons/phones.svg" alt=""><br>телефоны<br>&nbsp;</a>
                 </li>
                 <li>
-                    <a href="#">планшеты</a>
+                    <a href="#"><img src="img/icons/tablet.svg" alt=""><br>планшеты<br>&nbsp;</a>
                 </li>
                 <li>
-                    <a href="#">мак</a>
+                    <a href="#"><img src="img/icons/imac.svg" alt=""><br>мак<br>&nbsp;</a>
                 </li>
                 <li>
-                    <a href="#">apple гаджеты</a>
+                    <a href="#"><img src="img/icons/watch.svg" alt=""><br>apple <br>гаджеты</a>
                 </li>
                 <li>
-                    <a href="#">носимая электроника</a>
+                    <a href="#"><img src="img/icons/camera.svg" alt=""><br>носимая <br>электроника</a>
                 </li>
                 <li>
-                    <a href="#">плееры</a>
+                    <a href="#"><img src="img/icons/headphones.svg" alt=""><br>плееры<br>&nbsp;</a>
                 </li>
                 <li>
-                    <a href="#">приставки</a>
+                    <a href="#"><img src="img/icons/console.svg" alt=""><br>приставки<br>&nbsp;</a>
                 </li>
                 <li>
-                    <a href="#">gps</a>
+                    <a href="#"><img src="img/icons/antenna.svg" alt=""><br>gps<br>&nbsp;</a>
                 </li>
                 <li>
-                    <a href="#">аксессуары</a>
+                    <a href="#">аксессуары<br>&nbsp;</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!--
-
+        Hero area (banners, etc.)
     -->
     <div class="hero"></div>
 
     <main>
         <div class="container">
+            <!--
+                News
+            -->
             <section class="section section--news">
                 <header class="section__header">
                     <h2 class="section__title">Новости</h2>
@@ -121,6 +127,9 @@
                 article.news-item>
             </section>
 
+            <!--
+                Featured items or new items
+            -->
             <section class="section section--featured">
                 <header class="section__header">
                     <h2 class="section__title">Новинки</h2>
@@ -129,6 +138,41 @@
             </section>
         </div>
     </main>
+    <!--
+        Footer
+    -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="logo-n-contacts">
+                <a href="">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                </a>
+                <div class="contacts  contacts--footer">
+                    <div class="contact">
+                        <div class="contact__icon  contact__icon--loc"></div>
+                        <div class="contact__info">
+                            ул. Пролетарская, д.15 <br>300м от Дома Советов
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__icon  contact__icon--time"></div>
+                        <div class="contact__info">
+                            Пн-Пт: 10:00-19:00 <br>Сб-Вс: 10:00-17:30
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__icon  contact__icon--call"></div>
+                        <div class="contact__info  contact__info--call">
+                            Магазин: <span class="contact__phone"><a href="tel:84012900310">8 (4012) 900-310</a></span><br> Сервис:
+                            <span class="contact__phone  contact__phone--ml"><a href="tel:84012900300">8 (4012) 900-300</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/granim.js"></script>
     <script src="js/scripts.js"></script>

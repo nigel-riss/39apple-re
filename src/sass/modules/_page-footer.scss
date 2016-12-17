@@ -1,0 +1,11 @@
+.page-footer {
+    // positioning
+    position: relative;
+
+    // box model
+    padding-bottom: 25px;
+
+    // visual
+    background-color: $mainGreen;
+    background-image: linear-gradient(to right, $mainGreen, $secondaryGreen);
+}

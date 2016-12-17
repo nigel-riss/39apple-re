@@ -1,4 +1,10 @@
 .contacts {
     // box model
     float: right;
+
+    &--footer {
+        float: left;
+        margin-left: -30px;
+        margin-top: -20px;
+    }
 }
