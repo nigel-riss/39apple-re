@@ -45,21 +45,37 @@
         }
     }
 
-    &__phone a{
-        // box model
-        display: inline-block;
-        padding: 3px 10px;
+    &__phone {
+        &--ml {
+            // box model
+            margin-left: 10px;
+        }
 
-        // typography
-        color: $darkBlue;
-        color: $mainGreen;
-        font-size: 0.875rem;
-        font-weight: 400;
-        line-height: 1;
-        text-decoration: none;
+        a {
+            // box model
+            display: inline-block;
+            padding: 3px 10px;
 
-        // visual
-        background-color: #ffffff;
-        border-radius: 10px;
+            // typography
+            color: $darkBlue;
+            color: #ffffff;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1;
+            text-decoration: none;
+
+            // visual
+            background-color: transparent;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+
+            &:hover {
+                // typography
+                color: $mainGreen;
+
+                // visual
+                background-color: #ffffff;
+            }
+        }
     }
 }

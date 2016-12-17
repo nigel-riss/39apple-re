@@ -23,16 +23,26 @@
     li {
         // box model
         display: inline-block;
+
+        // typography
+        text-align: center;
     }
 
     a {
         // box model
         display: block;
         padding: 0 15px;
+        // border: 1px solid red;
+
         // typography
         color: #ffffff;
         font-weight: 300;
         font-size: 1rem;
         text-decoration: none;
+    }
+
+    img {
+        height: 64px;
+        width: 64px;
     }
 }
