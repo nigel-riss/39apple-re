@@ -1,0 +1,13 @@
+body {
+    // box model
+    box-sizing: border-box;
+
+    // typography
+    font-family: $mainFont;
+    font-size: 16px;
+}
+
+* {
+    // box model
+    box-sizing: inherit;
+}

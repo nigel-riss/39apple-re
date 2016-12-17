@@ -1,0 +1,65 @@
+.contact {
+    // box model
+    display: inline-block;
+    padding-left: 30px;
+    padding-top: 20px;
+
+    &__info {
+        // box model
+        display: inline-block;
+        padding-left: 5px;
+
+        // typography
+        color: #ffffff;
+        font-weight: 300;
+        line-height: 1.5;
+
+        &--call {
+            text-align: justify;
+            // border: 1px solid red;
+        }
+    }
+
+    &__icon {
+        // box model
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+
+        // visual
+        background-size: 36px 36px;
+
+        &--loc {
+            // visual
+            background-image: url(../img/location.svg);
+        }
+
+        &--time {
+            // visual
+            background-image: url(../img/time.svg);
+        }
+
+        &--call {
+            // visual
+            background-image: url(../img/call.svg);
+        }
+    }
+
+    &__phone a{
+        // box model
+        display: inline-block;
+        padding: 3px 10px;
+
+        // typography
+        color: $darkBlue;
+        color: $mainGreen;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1;
+        text-decoration: none;
+
+        // visual
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+}

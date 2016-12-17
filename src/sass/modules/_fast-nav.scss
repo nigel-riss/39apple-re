@@ -1,0 +1,38 @@
+.fast-nav {
+    // positioning
+    position: relative;
+    
+    // box model
+    padding: 15px 0;
+    // border: 1px solid red;
+    
+    // visual
+    background-color: $mainGreen;
+    background-image: linear-gradient(to right, $darkBlue, $marine);
+
+    ul {
+        // box model
+        margin: 0;
+        padding: 0;
+        margin-left: -15px;
+
+        // visual
+        list-style: none;
+    }
+
+    li {
+        // box model
+        display: inline-block;
+    }
+
+    a {
+        // box model
+        display: block;
+        padding: 0 15px;
+        // typography
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+}
