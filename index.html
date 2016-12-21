@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <!--
+    <!-- ✄
         Header with contacts
     -->
     <header class="page-header">
@@ -79,31 +79,58 @@
         <div class="container">
             <ul>
                 <li>
-                    <a href="#"><img src="img/icons/phones.svg" alt=""><br>телефоны<br>&nbsp;</a>
+                    <a href="#">
+                        <img src="img/icons/phones.svg" alt="">
+                        <div class="fast-nav__text">телефоны</div>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/icons/tablet.svg" alt=""><br>планшеты<br>&nbsp;</a>
+                    <a href="#">
+                        <img src="img/icons/tablet.svg" alt="">
+                        <div class="fast-nav__text">планшеты</div>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/icons/imac.svg" alt=""><br>мак<br>&nbsp;</a>
+                    <a href="#">
+                        <img src="img/icons/imac.svg" alt="">
+                        <div class="fast-nav__text">мак</div>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/icons/watch.svg" alt=""><br>apple <br>гаджеты</a>
+                    <a href="#">
+                        <img src="img/icons/watch.svg" alt="">
+                        <div class="fast-nav__text">apple гаджеты</div>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/icons/camera.svg" alt=""><br>носимая <br>электроника</a>
+                    <a href="#">
+                        <img src="img/icons/camera.svg" alt="">
+                        <div class="fast-nav__text">носимая электроника</div>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/icons/headphones.svg" alt=""><br>плееры<br>&nbsp;</a>
+                    <a href="#">
+                        <img src="img/icons/headphones.svg" alt="">
+                        <div class="fast-nav__text">плееры</div>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/icons/console.svg" alt=""><br>приставки<br>&nbsp;</a>
+                    <a href="#">
+                        <img src="img/icons/console.svg" alt="">
+                        <div class="fast-nav__text">приставки</div>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/icons/antenna.svg" alt=""><br>gps<br>&nbsp;</a>
+                    <a href="#">
+                        <img src="img/icons/antenna.svg" alt="">
+                        <div class="fast-nav__text">gps</div>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">аксессуары<br>&nbsp;</a>
+                    <a href="#">
+                        <img src="img/icons/accessories.svg" alt="">
+                        <div class="fast-nav__text">аксессуары</div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -111,8 +138,12 @@
     <!--
         Hero area (banners, etc.)
     -->
-    <div class="hero"></div>
+    <div class="hero">
 
+    </div>
+    <!--
+        Main
+    -->
     <main>
         <div class="container">
             <!--
@@ -124,7 +155,69 @@
                     <p class="section__subtitle">то, о чем мы хотим вам рассказать</p>
                 </header>
 
-                article.news-item>
+                <!--article.news-item*6>(header.news-item__header>(h3.news-item__title+.news-item__date))+p.news-item__excerpt+.news-item__img-container>img-->
+                <!--article.news-item*6>(header.news-item__header>(h3.news-item__title+.news-item__date))+p.news-item__excerpt+.news-item__img-container>img[src="http://lorempixel.com/400/200/technics/$"]-->
+                <!--a*6>article.news-item>(header.news-item__header>(h3.news-item__title{заголовок}+.news-item__date))+(p.news-item__excerpt>lorem)+.news-item__img-container>img[src="http://lorempixel.com/400/200/technics/$"]-->
+                <a href="">
+                    <article class="news-item">
+                        <header class="news-item__header">
+                            <h3 class="news-item__title">Яблочная барахолка</h3>
+                            <div class="news-item__date"></div>
+                        </header>
+                        <p class="news-item__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae quae, expedita at, eos quod voluptas deleniti doloribus quasi nobis a beatae? Beatae aperiam quo, quos laboriosam ipsam nisi corporis!</p>
+                        <div class="news-item__img-container"><img src="http://lorempixel.com/400/200/technics/1" alt=""></div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="news-item">
+                        <header class="news-item__header">
+                            <h3 class="news-item__title">Apple iPhone 7 Суперцена!</h3>
+                            <div class="news-item__date"></div>
+                        </header>
+                        <p class="news-item__excerpt">Libero eos laborum asperiores placeat amet incidunt repellendus harum nulla, fugit voluptatum! Quae fugiat inventore maxime ea eligendi quos provident tempore voluptatum modi, doloribus et delectus sunt dolores? Dicta, excepturi.</p>
+                        <div class="news-item__img-container"><img src="http://lorempixel.com/400/200/technics/2" alt=""></div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="news-item">
+                        <header class="news-item__header">
+                            <h3 class="news-item__title">Доступна продукция Apple под заказ</h3>
+                            <div class="news-item__date"></div>
+                        </header>
+                        <p class="news-item__excerpt">Repellendus delectus, ut assumenda id ea consequatur eum quis iure corporis totam non voluptate praesentium suscipit dignissimos nihil odio porro debitis ab dolorum tempore maxime nulla iste nam cupiditate! Beatae.</p>
+                        <div class="news-item__img-container"><img src="http://lorempixel.com/400/200/technics/3" alt=""></div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="news-item">
+                        <header class="news-item__header">
+                            <h3 class="news-item__title">Акция: iPad в школе</h3>
+                            <div class="news-item__date"></div>
+                        </header>
+                        <p class="news-item__excerpt">Tenetur iusto iste, quaerat doloremque vero laudantium veritatis eius vel, consectetur possimus quae asperiores necessitatibus nam, odit repudiandae corrupti pariatur labore quas laborum ipsam deleniti. Accusamus quisquam, ex perferendis pariatur!</p>
+                        <div class="news-item__img-container"><img src="http://lorempixel.com/400/200/technics/4" alt=""></div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="news-item">
+                        <header class="news-item__header">
+                            <h3 class="news-item__title">Мы переехали!</h3>
+                            <div class="news-item__date"></div>
+                        </header>
+                        <p class="news-item__excerpt">Corporis quidem, incidunt adipisci? Veniam, dicta, quaerat. Soluta, sit quas enim laborum voluptate debitis at necessitatibus magni atque deserunt asperiores libero ut rerum, consequuntur fugiat ducimus eveniet magnam est quisquam?</p>
+                        <div class="news-item__img-container"><img src="http://lorempixel.com/400/200/technics/5" alt=""></div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="news-item">
+                        <header class="news-item__header">
+                            <h3 class="news-item__title">У нас доступен Trade-in</h3>
+                            <div class="news-item__date"></div>
+                        </header>
+                        <p class="news-item__excerpt">Quod corporis eligendi, impedit provident necessitatibus inventore cum ad veniam quos totam placeat expedita, natus deleniti repellendus obcaecati, minus molestias ullam nobis, aut illum quo unde iste sint. Molestiae, voluptas!</p>
+                        <div class="news-item__img-container"><img src="http://lorempixel.com/400/200/technics/6" alt=""></div>
+                    </article>
+                </a>
             </section>
 
             <!--

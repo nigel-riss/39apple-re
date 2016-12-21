@@ -31,14 +31,27 @@
         display: block;
         // line-height: 56px;
         // margin: -10px 0;
-        padding: 0 15px;
+        padding: 6px 15px;
         padding-top: 2px;
+        // border: 1px solid red;
 
         // typography
         color: #ffffff;
         font-weight: 300;
         font-size: 1.5rem;
         text-decoration: none;
+
+        // visual
+        border-radius: 18px;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            // typography
+            color: $mainGreen;
+
+            // visual
+            background-color: #fff;
+        }
     }
 
         &__canvas {
