@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g id="flash_drive">
+	<g>
+		<g>
+			<rect x="34" y="9" fill="#FFFFFF" width="3" height="2"/>
+		</g>
+		<g>
+			<rect x="27" y="9" fill="#FFFFFF" width="3" height="2"/>
+		</g>
+	</g>
+	<path fill="#FFFFFF" d="M40,15.1V2H24v13.1c-2.8,0.5-5,2.9-5,5.9v37c0,2.2,1.8,4,4,4h18c2.2,0,4-1.8,4-4V21
+		C45,18,42.8,15.6,40,15.1z M38,4v12H26V4H38z M43,58c0,1.1-0.9,2-2,2H23c-1.1,0-2-0.9-2-2V21c0-2.2,1.8-4,4-4h14c2.2,0,4,1.8,4,4
+		V58z"/>
+</g>
+</svg>

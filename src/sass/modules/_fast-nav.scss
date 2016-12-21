@@ -12,6 +12,8 @@
 
     ul {
         // box model
+        display: flex;
+        justify-content: space-between;
         margin: 0;
         padding: 0;
         margin-left: -15px;
@@ -23,6 +25,7 @@
     li {
         // box model
         display: inline-block;
+        vertical-align: top;
 
         // typography
         text-align: center;
@@ -31,18 +34,35 @@
     a {
         // box model
         display: block;
-        padding: 0 15px;
-        // border: 1px solid red;
+        padding: 8px 15px;
+        height: 100%;
 
         // typography
         color: #ffffff;
         font-weight: 300;
         font-size: 1rem;
         text-decoration: none;
+
+        // visual
+        border: 1px solid transparent;
+        border-radius: 4px;
+
+        &:hover {
+            // visual
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
     }
 
     img {
+        // box model
+        display: block;
+        margin: 0 auto;
         height: 64px;
         width: 64px;
+    }
+
+    &__text {
+        // box model
+        padding-top: 10px;
     }
 }
