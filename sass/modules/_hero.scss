@@ -1,5 +1,12 @@
 .hero {
     // box model
     height: 450px;
-    background-color: black;
+    // background-color: black;
+    margin-top: 20px;
+
+    img {
+        // box model
+        display: block;
+        margin: 0 auto;
+    }
 }

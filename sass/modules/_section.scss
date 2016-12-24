@@ -4,13 +4,13 @@
 
     &--news {
         // box model
-        width: 66%;
+        width: calc(100% - 290px);
         float: left;
     }
 
     &--featured {
         // box model
-        width: 33%;
+        width: 290px;
         float: left;
     }
 
