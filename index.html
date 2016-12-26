@@ -5,136 +5,21 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="import" href="header.html">
+    <link rel="import" href="footer.html">
 </head>
 
 <body>
-    <!-- ✄
-        Header with contacts
-    -->
-    <header class="page-header">
-        <canvas id="canvasss" class="page-header__canvas"></canvas>
-        <div class="container  container--relative-z-1">
-            <a href="">
-                <div class="logo">
-                    <img src="img/logo.svg" alt="">
-                </div>
-            </a>
-            <div class="contacts">
-                <div class="contact">
-                    <div class="contact__icon  contact__icon--loc"></div>
-                    <div class="contact__info">
-                        ул. Пролетарская, д.15 <br>300м от Дома Советов
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="contact__icon  contact__icon--time"></div>
-                    <div class="contact__info">
-                        Пн-Пт: 10:00-19:00 <br>Сб-Вс: 10:00-17:30
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="contact__icon  contact__icon--call"></div>
-                    <div class="contact__info  contact__info--call">
-                        Магазин: <span class="contact__phone"><a href="tel:84012900310">8 (4012) 900-310</a></span><br> Сервис:
-                        <span class="contact__phone  contact__phone--ml"><a href="tel:84012900300">8 (4012) 900-300</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
     <!--
-        Main navigation with search
+        Page header
     -->
-    <nav class="main-nav">
-        <canvas id="canvasss" class="main-nav__canvas"></canvas>
-        <div class="container  container--relative-z-1">
-            <ul>
-                <li>
-                    <a href="news.html">Новости</a>
-                </li>
-                <li>
-                    <a href="catalog.html">Каталог</a>
-                </li>
-                <li>
-                    <a href="repair.html">Ремонт</a>
-                </li>
-                <li>
-                    <a href="exchange.html">Обмен</a>
-                </li>
-                <li>
-                    <a href="about.html">О компании</a>
-                </li>
-            </ul>
+    <script>
+        var headerLink = document.querySelector('link[rel="import"][href="header.html"]');
+        var headerContent = headerLink.import;
+        var headerElement = headerContent.querySelector('.page-header');
+        document.body.appendChild(headerElement.cloneNode(true));
+    </script>
 
-            <form class="search-form" action="/search/">
-                <input class="search-form__input" type="text" placeholder="Поиск по сайту">
-                <button class="search-form__button" type="submit">Найти</button>
-            </form>
-        </div>
-    </nav>
-    <!--
-        Fast navigation for catalog
-    -->
-    <nav class="fast-nav">
-        <div class="container">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="img/icons/phones.svg" alt="">
-                        <div class="fast-nav__text">Телефоны</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/icons/tablet.svg" alt="">
-                        <div class="fast-nav__text">Планшеты</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/icons/imac.svg" alt="">
-                        <div class="fast-nav__text">Mac</div>
-                    </a>
-                </li>
-                <!--<li>
-                    <a href="#">
-                        <img src="img/icons/watch.svg" alt="">
-                        <div class="fast-nav__text">Apple гаджеты</div>
-                    </a>
-                </li>-->
-                <li>
-                    <a href="#">
-                        <img src="img/icons/watch.svg" alt="">
-                        <div class="fast-nav__text">Носимая<br>электроника</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/icons/headphones.svg" alt="">
-                        <div class="fast-nav__text">Плееры</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/icons/console.svg" alt="">
-                        <div class="fast-nav__text">Приставки</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/icons/antenna.svg" alt="">
-                        <div class="fast-nav__text">Видеорегистраторы<br>и GPS</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/icons/accessories.svg" alt="">
-                        <div class="fast-nav__text">Аксессуары</div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <!--
         Hero area (banners, etc.)
     -->
@@ -265,38 +150,12 @@
     <!--
         Footer
     -->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="logo-n-contacts">
-                <a href="">
-                    <div class="logo">
-                        <img src="img/logo.svg" alt="">
-                    </div>
-                </a>
-                <div class="contacts  contacts--footer">
-                    <div class="contact">
-                        <div class="contact__icon  contact__icon--loc"></div>
-                        <div class="contact__info">
-                            ул. Пролетарская, д.15 <br>300м от Дома Советов
-                        </div>
-                    </div>
-                    <div class="contact">
-                        <div class="contact__icon  contact__icon--time"></div>
-                        <div class="contact__info">
-                            Пн-Пт: 10:00-19:00 <br>Сб-Вс: 10:00-17:30
-                        </div>
-                    </div>
-                    <div class="contact">
-                        <div class="contact__icon  contact__icon--call"></div>
-                        <div class="contact__info  contact__info--call">
-                            Магазин: <span class="contact__phone"><a href="tel:84012900310">8 (4012) 900-310</a></span><br> Сервис:
-                            <span class="contact__phone  contact__phone--ml"><a href="tel:84012900300">8 (4012) 900-300</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <script>
+        var footerLink = document.querySelector('link[rel="import"][href="footer.html"]');
+        var footerContent = footerLink.import;
+        var footerElement = footerContent.querySelector('.page-footer');
+        document.body.appendChild(footerElement.cloneNode(true));
+    </script>
 
     <script src="js/granim.js"></script>
     <script src="js/scripts.js"></script>

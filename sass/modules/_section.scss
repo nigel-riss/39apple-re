@@ -14,6 +14,23 @@
         float: left;
     }
 
+    &--catalog-items {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% - 400px);
+        float: right;
+        padding-left: 20px;
+        // border: 1px solid red;
+    }
+
+    &--catalog-filters {
+        // box model
+        width: 400px;
+        float: left;
+        border: 1px solid red;
+    }
+
     &__header {
         // box model
         margin-bottom: 30px;

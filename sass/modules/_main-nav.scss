@@ -5,10 +5,12 @@
     // box model
     padding: 10px 0;
     // border: 1px solid red;
+    @include clearfix;
+    // border: 1px solid red;
     
     // visual
-    background-color: $mainGreen;
-    background-image: linear-gradient(to right, $mainGreen, $secondaryGreen);
+    // background-color: $mainGreen;
+    // background-image: linear-gradient(to right, $mainGreen, $secondaryGreen);
 
     & ul {
         // box model

@@ -492,9 +492,12 @@ body {
 
 .main-nav {
   position: relative;
-  padding: 10px 0;
-  background-color: #04b004;
-  background-image: linear-gradient(to right, #04b004, #2ecc71); }
+  padding: 10px 0; }
+  .main-nav:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both; }
   .main-nav ul {
     margin: 0;
     margin-left: -15px;
@@ -606,6 +609,16 @@ body {
   .section--featured {
     width: 290px;
     float: left; }
+  .section--catalog-items {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 400px);
+    float: right;
+    padding-left: 20px; }
+  .section--catalog-filters {
+    width: 400px;
+    float: left;
+    border: 1px solid red; }
   .section__header {
     margin-bottom: 30px;
     padding-bottom: 10px;
@@ -671,6 +684,7 @@ body {
 
 .shop-item {
   position: relative;
+  display: inline-block;
   width: 250px;
   padding: 20px;
   margin-bottom: 40px;
@@ -692,6 +706,7 @@ body {
   .shop-item__title {
     padding-top: 20px;
     padding-bottom: 10px;
+    height: 80px;
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
