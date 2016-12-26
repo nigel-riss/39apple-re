@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="import" href="header.html">
+    <link rel="import" href="footer.html">
+</head>
+
+<body>
+    <!--
+        Page header
+    -->
+    <script>
+        var headerLink = document.querySelector('link[rel="import"][href="header.html"]');
+        var headerContent = headerLink.import;
+        var headerElement = headerContent.querySelector('.page-header');
+        document.body.appendChild(headerElement.cloneNode(true));
+    </script>
+
+    <!--
+        Main
+    -->
+    <main>
+        <div class="container">
+            <div class="section section--catalog-filters">
+                <div class="catalog-filter-set">
+                    <h3 class="catalog-filter__title">Категория</h3>
+                    <ul class="catalog-filter__list">
+                        <li><a href="">Телефоны</a></li>
+                        <li><a href="">Планшеты</a></li>
+                        <li><a href="">Mac</a></li>
+                        <li><a href="">Носимая электроника</a></li>
+                        <li><a href="">Плееры</a></li>
+                        <li><a href="">Игровые приставки</a></li>
+                        <li><a href="">Видеорегистраторы и GPS</a></li>
+                        <li><a href="">Аксессуары</a></li>
+                    </ul>
+                </div>
+
+                <div class="catalog-filter-set">
+                    <h3 class="catalog-filter__title">Бренды</h3>
+                    <ul class="catalog-filter__list">
+                        <li><a href="">Телефоны</a></li>
+                        <li><a href="">Планшеты</a></li>
+                        <li><a href="">Mac</a></li>
+                        <li><a href="">Носимая электроника</a></li>
+                        <li><a href="">Плееры</a></li>
+                        <li><a href="">Игровые приставки</a></li>
+                        <li><a href="">Видеорегистраторы и GPS</a></li>
+                        <li><a href="">Аксессуары</a></li>
+                    </ul>
+                </div>
+
+                <div class="catalog-filter-set">
+                    <h3 class="catalog-filter__title">Цена</h3>
+                </div>
+            </div>
+
+            <div class="section section--catalog-items">
+                <div class="shop-item">
+                    <div class="shop-item__image">
+                        <img src="./img/item-imgs/item1.jpg" alt="">
+                    </div>
+                    <div class="shop-item__title">Apple iPhone 4s 16Gb RFB</div>
+                    <div class="shop-item__price">10 990 руб.</div>
+                    <div class="shop-item__recency">б/y</div>
+                    <div class="shop-item__colors"></div>
+                </div>
+
+                <div class="shop-item">
+                    <div class="shop-item__image">
+                        <img src="./img/item-imgs/item2.jpg" alt="">
+                    </div>
+                    <div class="shop-item__title">Apple iPhone 5 16Gb RFB</div>
+                    <div class="shop-item__price">14 990 руб.</div>
+                    <div class="shop-item__recency">б/у</div>
+                    <div class="shop-item__promo">акция</div>
+                    <div class="shop-item__colors"></div>
+                </div>
+
+                <div class="shop-item">
+                    <div class="shop-item__image">
+                        <img src="./img/item-imgs/item3.jpg" alt="">
+                    </div>
+                    <div class="shop-item__title">Иговая консоль PlayStation 4 Pro 1Tb</div>
+                    <div class="shop-item__price">28 500 руб.</div>
+                    <div class="shop-item__recency">новый</div>
+                    <div class="shop-item__colors"></div>
+                </div>
+
+                
+            </div>
+        </div>
+    </main>
+    <!--
+        Footer
+    -->
+    <script>
+        var footerLink = document.querySelector('link[rel="import"][href="footer.html"]');
+        var footerContent = footerLink.import;
+        var footerElement = footerContent.querySelector('.page-footer');
+        document.body.appendChild(footerElement.cloneNode(true));
+    </script>
+
+    <script src="js/granim.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
