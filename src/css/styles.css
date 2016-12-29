@@ -634,6 +634,13 @@ body {
     color: #97a3ab;
     font-size: 1.125rem;
     text-align: right; }
+  .section__text {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5; }
+    .section__text--larger {
+      font-size: 1.25rem; }
 
 .news-item {
   position: relative;
@@ -751,6 +758,46 @@ body {
     text-align: center;
     background-color: #ff5722;
     border-radius: 50%; }
+
+.form {
+  margin: 0 200px;
+  padding: 20px 80px;
+  padding-bottom: 40px;
+  background-color: #eeeeee;
+  border-radius: 5px; }
+  .form__text-input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 3px; }
+
+.button {
+  padding: 15px 30px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff5722;
+  cursor: pointer; }
+  .button:hover {
+    opacity: 0.8; }
+  .button:focus {
+    outline: none; }
+  .button:active {
+    padding: 13px 30px;
+    color: #ff5722;
+    border: 2px solid #ff5722;
+    background-color: #ffffff; }
+  .button--blocked {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px; }
 
 .page-footer {
   position: relative;

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="import" href="header.html">
+    <link rel="import" href="footer.html">
+</head>
+
+<body>
+    <!--
+        Page header
+    -->
+    <script>
+        var headerLink = document.querySelector('link[rel="import"][href="header.html"]');
+        var headerContent = headerLink.import;
+        var headerElement = headerContent.querySelector('.page-header');
+        document.body.appendChild(headerElement.cloneNode(true));
+    </script>
+
+    <!--
+        Main
+    -->
+    <main>
+        <div class="container">
+
+            <section class="section">
+                <header class="section__header">
+                    <h2 class="section__title">Уточнить стоимость ремонта</h2>
+                    <p class="section__subtitle">Оставьте заявку на ремонт Вашего устройства</p>
+                </header>
+
+                <form class="form" action="">
+                    <input type="hidden" name="save" value="1">
+                    <p class="section__text  section__text--larger">Заполните форму и наши специалисты свяжутся с Вами на столько быстро, на сколько это возможно в данный момент! </p>
+
+                    <input class="form__text-input" name="fio" type="text" placeholder="Имя и Фамилия" value="">
+                    <input class="form__text-input" name="phone_model" type="text" placeholder="Точная модель вашего устройства" value="">
+                    <input class="form__text-input" name="failure_description" type="text" placeholder="Опишите поломку" value="">
+                    <input class="form__text-input" name="phone_number" type="text" placeholder="Контактный телефон" value="">
+                    <!--<input class="form__checkbox" name="emergency_repairs" type="checkbox" id="urgent-repair" value="1" >-->
+                    <!--<label class="form__label  form__label--checkbox" for="urgent-repair">Cделать Ваш ремонт срочно </label>-->
+                    <div class="form__button-container">
+                        <input class="button button--blocked" type="submit" value="Отправить заявку">
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </main>
+    <!--
+        Footer
+    -->
+    <script>
+        var footerLink = document.querySelector('link[rel="import"][href="footer.html"]');
+        var footerContent = footerLink.import;
+        var footerElement = footerContent.querySelector('.page-footer');
+        document.body.appendChild(footerElement.cloneNode(true));
+    </script>
+
+    <script src="js/granim.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
