@@ -61,4 +61,20 @@
         font-size: 1.125rem;;
         text-align: right;
     }
+
+    &__text {
+        // box model
+
+        // typography
+        font-family: $mainFont;
+        font-size: 1rem;
+        font-weight: 300;
+
+        line-height: 1.5;
+
+        &--larger {
+            // typography
+            font-size: 1.25rem;
+        }
+    }
 }

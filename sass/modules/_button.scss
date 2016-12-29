@@ -1,0 +1,47 @@
+.button {
+    // box model
+    padding: 15px 30px;
+    box-sizing: border-box;
+    // height: 50px;
+
+    // typography
+    color: #ffffff;
+    font-family: $mainFont;
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    // visual
+    border: none;
+    border-radius: 25px;
+    background-color: $accent;
+    cursor: pointer;
+
+    &:hover {
+        // visual
+        opacity: 0.8;
+    }
+
+    &:focus {
+        // visual
+        outline: none;
+    }
+
+    &:active {
+        // box model
+        padding: 13px 30px;
+        
+        // typography
+        color: $accent;
+
+        // visual
+        border: 2px solid $accent;
+        background-color: #ffffff;
+    }
+
+    &--blocked {
+        // box model
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}
