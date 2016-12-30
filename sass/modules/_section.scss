@@ -67,14 +67,35 @@
 
         // typography
         font-family: $mainFont;
-        font-size: 1rem;
+        font-size: 1.125rem;
         font-weight: 300;
-
         line-height: 1.5;
 
         &--larger {
             // typography
             font-size: 1.25rem;
+        }
+    }
+
+    &__list {
+        // box model
+        padding: 0;
+
+        // visual
+        list-style: none;
+
+        & li {
+            font-family: $mainFont;
+            font-size: 1.125rem;
+            font-weight: 300;
+            line-height: 1.5;
+
+            &:before {
+                content: "— ";
+
+                // typography
+                color: $mainGreen;
+            }
         }
     }
 }

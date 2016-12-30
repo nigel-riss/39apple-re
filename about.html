@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="import" href="header.html">
+    <link rel="import" href="footer.html">
+</head>
+
+<body>
+    <!--
+        Page header
+    -->
+    <script>
+        var headerLink = document.querySelector('link[rel="import"][href="header.html"]');
+        var headerContent = headerLink.import;
+        var headerElement = headerContent.querySelector('.page-header');
+        document.body.appendChild(headerElement.cloneNode(true));
+    </script>
+    <!--
+        Main
+    -->
+    <main>
+        <div class="container">
+
+            <section class="section">
+                <header class="section__header">
+                    <h2 class="section__title">О нас</h2>
+                    <p class="section__subtitle">Информация о нашей компании и услугах</p>
+                </header>
+
+                <p class="section__text">
+                    Мы рады приветствовать вас на страницах нашего сайта.
+                </p>
+                <p class="section__text">
+                    Наша компания специализируется на продаже и сервисному обслуживанию продукции Apple. Также, мы предлагаем большой ассортимент аксессуаров для мобильных устройств.
+                </p>
+                <p class="section__text">
+                    Мы предлагаем высококачественную продукцию по конкурентоспособным ценам.
+                </p>
+                <p class="section__text">
+                    В нашем магазине к вашим услугам:
+                    <ul class="section__list">
+                        <li>реальные и конкурентоспособные цены;</li>
+                        <li>широчайший ассортимент продукции Apple;</li>
+                        <li>гарантийное обслуживание купленных у нас товаров;</li>
+                        <li>программа обмена старых телефонов;</li>
+                        <li>программа кредитования;</li>
+                        <li>и многое другое.</li>
+                    </ul>
+                </p>
+                <p class="section__text">
+                    Мы всегда рады общению с нашими клиентами.
+                </p>
+            </section>
+
+            <section class="section">
+                <header class="section__header">
+                    <h2 class="section__title">Контакты</h2>
+                    <p class="section__subtitle">Как с нами связаться и где нас найти</p>
+                </header>
+
+                <p class="section__text">
+                    Адрес: ул.Пролетарская, д.15 (300м от Дома Советов)
+                </p>
+                <p class="section__text">
+                    Магазин: <a href="tel:84012900310">8 (4012) 900-310</a><br>
+                    Сервис: <a href="tel:84012900300">8 (4012) 900-300</a>
+                </p>
+                <p class="section__text">
+                    Электронная почта: <a href="mailto:info@39apple.ru">info@39apple.ru</a>
+                </p>
+                <p class="section__text">
+                    График работы:<br>
+                    ПН-ПТ: 10:00-19:00<br>
+                    СБ-ВС: 10:00-17:30
+                </p>
+            </section>
+        </div>
+    </main>
+    <!--
+        Footer
+    -->
+    <script>
+        var footerLink = document.querySelector('link[rel="import"][href="footer.html"]');
+        var footerContent = footerLink.import;
+        var footerElement = footerContent.querySelector('.page-footer');
+        document.body.appendChild(footerElement.cloneNode(true));
+    </script>
+
+    <script src="js/granim.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

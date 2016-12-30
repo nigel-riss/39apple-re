@@ -11,3 +11,26 @@ body {
     // box model
     box-sizing: inherit;
 }
+
+a {
+    // typography
+    color: $mainGreen;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+p {
+    // typography
+    font-family: $mainFont;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5;
+
+    &--larger {
+        // typography
+        font-size: 1.25rem;
+    }
+}
