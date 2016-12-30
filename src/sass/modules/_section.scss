@@ -98,4 +98,9 @@
             }
         }
     }
+
+    &__image {
+        // box model
+        max-width: 100%;
+    }
 }
