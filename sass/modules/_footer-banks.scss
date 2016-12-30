@@ -1,0 +1,12 @@
+.footer-banks {
+    // box model
+    margin-left: -30px;
+    padding-right: 40px;
+
+    &__caption {
+        // box model
+        padding-bottom: 40px;
+        // typography
+        color: #ffffff;
+    }
+}

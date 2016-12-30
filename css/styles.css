@@ -697,6 +697,8 @@ p {
       .section__list li:before {
         content: "— ";
         color: #04b004; }
+  .section__image {
+    max-width: 100%; }
 
 .news-item {
   position: relative;
@@ -729,7 +731,13 @@ p {
     top: 0;
     left: 0;
     width: 100%;
+    height: 200px;
     overflow: hidden; }
+    .news-item__img-container img {
+      display: block;
+      margin: 0 auto;
+      min-width: 100%;
+      height: 100%; }
   .news-item__header {
     padding-top: 200px; }
   .news-item__title {
@@ -860,6 +868,21 @@ p {
   padding-bottom: 25px;
   background-color: #04b004;
   background-image: linear-gradient(to right, #04b004, #2ecc71); }
+  .page-footer__banks {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 35px; }
+  .page-footer__vk-widget {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 35px; }
 
 .logo-n-contacts {
   width: 400px; }
+
+.footer-banks {
+  margin-left: -30px;
+  padding-right: 40px; }
+  .footer-banks__caption {
+    padding-bottom: 40px;
+    color: #ffffff; }

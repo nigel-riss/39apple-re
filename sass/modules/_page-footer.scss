@@ -8,4 +8,20 @@
     // visual
     background-color: $mainGreen;
     background-image: linear-gradient(to right, $mainGreen, $secondaryGreen);
+
+    &__banks {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        // border: 1px solid red;
+        padding-top: 35px;
+    }
+
+    &__vk-widget {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        // border: 1px solid red;
+        padding-top: 35px;
+    }
 }
