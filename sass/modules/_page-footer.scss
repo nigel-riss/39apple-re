@@ -7,21 +7,34 @@
 
     // visual
     background-color: $mainGreen;
-    background-image: linear-gradient(to right, $mainGreen, $secondaryGreen);
+
+    @include atTabletsLandscape {
+        // visual
+        background-image: linear-gradient(to right, $mainGreen, $secondaryGreen);
+    }
 
     &__banks {
         // box model
-        display: inline-block;
+        display: none;
         vertical-align: top;
         // border: 1px solid red;
         padding-top: 35px;
+
+        @include atTabletsLandscape {
+            // box model
+            display: inline-block;
+        }
     }
 
     &__vk-widget {
         // box model
-        display: inline-block;
+        display: none;
         vertical-align: top;
-        // border: 1px solid red;
         padding-top: 35px;
+
+        @include atTabletsLandscape {
+            // box model
+            display: inline-block;
+        }
     }
 }

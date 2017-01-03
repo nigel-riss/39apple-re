@@ -1,10 +1,33 @@
 .contacts {
-    // box model
-    float: right;
-    
+    @include atSmall {
+        // box model
+        display: none;
+    }
+
+    @include atTabletsPortrait {
+        // box model
+        display: block;
+        
+        // typography
+        text-align: center;
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        float: right;
+
+        // typography
+        text-align: left;
+    }
+
     &--footer {
-        float: left;
-        margin-left: -30px;
-        margin-top: -20px;
+        // box model
+        display: block;
+
+        @include atTabletsLandscape {
+            float: left;
+            margin-left: -30px;
+            margin-top: -20px;
+        }
     }
 }

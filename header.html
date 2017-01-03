@@ -8,6 +8,9 @@
                 <img src="img/logo.svg" alt="">
             </div>
         </a>
+        <div class="menu-button">
+            <img src="./img/menu.svg" alt="menu button">
+        </div>
         <div class="contacts">
             <div class="contact">
                 <div class="contact__icon  contact__icon--loc"></div>
@@ -21,7 +24,7 @@
                     Пн-Пт: 10:00-19:00 <br>Сб-Вс: 10:00-17:30
                 </div>
             </div>
-            <div class="contact">
+            <div class="contact  contact--last">
                 <div class="contact__icon  contact__icon--call"></div>
                 <div class="contact__info  contact__info--call">
                     Магазин: <span class="contact__phone"><a href="tel:84012900310">8 (4012) 900-310</a></span><br> Сервис:
@@ -53,11 +56,12 @@
                 </li>
             </ul>
 
-            <form class="search-form" action="/search/">
-                <input class="search-form__input" type="text" placeholder="Поиск по сайту">
-                <button class="search-form__button" type="submit">Найти</button>
-            </form>
         </nav>
+        
+        <form class="search-form" action="/search/">
+            <input class="search-form__input" type="text" placeholder="Поиск по сайту">
+            <button class="search-form__button" type="submit">Найти</button>
+        </form>
     </div>
 
     <!--
@@ -66,7 +70,7 @@
     <nav class="fast-nav">
         <div class="container">
             <ul>
-                <li>
+                <li class="has-dropdown phones" data-content="phones">
                     <a href="#">
                         <img src="img/icons/phones.svg" alt="">
                         <div class="fast-nav__text">Телефоны</div>
@@ -84,12 +88,6 @@
                         <div class="fast-nav__text">Mac</div>
                     </a>
                 </li>
-                <!--<li>
-                    <a href="#">
-                        <img src="img/icons/watch.svg" alt="">
-                        <div class="fast-nav__text">Apple гаджеты</div>
-                    </a>
-                </li>-->
                 <li>
                     <a href="#">
                         <img src="img/icons/watch.svg" alt="">
@@ -123,4 +121,21 @@
             </ul>
         </div>
     </nav>
+
+    <!--<div class="morph-dropdown-wrapper">
+        <div class="dropdown-list">
+            <ul>
+                <li id="phones" class="dropdown">
+
+                </li>
+                <li class="dropdown"></li>
+                <li class="dropdown"></li>
+                <li class="dropdown"></li>
+                <li class="dropdown"></li>
+                <li class="dropdown"></li>
+            </ul>
+
+            <div class="dropdown-list__bg" area-hidden="true"></div>
+        </div>
+    </div>-->
 </header>

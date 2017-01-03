@@ -5,7 +5,10 @@
 
     // visual
     background-color: $mainGreen;
-    background-image: linear-gradient(to right, $mainGreen, $secondaryGreen);
+
+    @include atTabletsLandscape {
+        background-image: linear-gradient(to right, $mainGreen, $secondaryGreen);
+    }
 
     &__canvas {
         // positioning
