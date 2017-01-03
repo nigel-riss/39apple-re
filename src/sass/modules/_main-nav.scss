@@ -3,39 +3,60 @@
     position: relative;
 
     // box model
-    padding: 10px 0;
-    // border: 1px solid red;
-    @include clearfix;
-    // border: 1px solid red;
+    padding-bottom: 10px;
     
     // visual
     // background-color: $mainGreen;
     // background-image: linear-gradient(to right, $mainGreen, $secondaryGreen);
 
+    @include atTabletsPortrait {
+        // box model
+        padding: 10px 0;
+    }
+
+    @include atTabletsLandscape{
+        // box model
+        float: left;
+        @include clearfix;
+    }
+
     & ul {
         // box model
         margin: 0;
-        margin-left: -15px;
         padding: 0;
-        float: left;
 
         // visual
         list-style: none;
+
+        @include atTabletsPortrait {
+            // box model
+            text-align: center;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            margin-left: -15px;
+            // float: left;
+        }
     }
 
     & li {
         // box model
-        display: inline-block;
+        display: block;
+        margin-bottom: 5px;
+
+        @include atTabletsPortrait {
+            // box model
+            display: inline-block;
+            margin-bottom: 0;
+        }
     }
 
     & a {
         // box model
         display: block;
-        // line-height: 56px;
-        // margin: -10px 0;
-        padding: 6px 15px;
+        padding: 6px 10px;
         padding-top: 2px;
-        // border: 1px solid red;
 
         // typography
         color: #ffffff;
@@ -48,7 +69,28 @@
         border-radius: 18px;
         transition: background-color 0.2s ease;
 
+        @include atTabletsPortrait {
+            // box model
+            padding: 6px 12px;
+
+            // typography
+            font-size: 1.25rem;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            padding: 6px 15px;
+
+            // typography
+            font-size: 1.5rem;
+        }
+
         &:hover {
+            @include atSmall {
+                // box model
+                padding-left: 20px;
+            }
+
             // typography
             color: $mainGreen;
 

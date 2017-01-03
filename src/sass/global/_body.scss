@@ -3,8 +3,11 @@ body {
     box-sizing: border-box;
 
     // typography
+    color: $copyColor;
     font-family: $mainFont;
     font-size: 16px;
+
+    // overflow: hidden;
 }
 
 * {

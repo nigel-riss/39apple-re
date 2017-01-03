@@ -18,6 +18,7 @@
         // box model
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: calc(100% - 400px);
         float: right;
         padding-left: 20px;

@@ -3,17 +3,27 @@
     position: relative;
 
     // box model
-    float: right;
+    margin-bottom: 15px;
+    // border: 1px solid red;
+
+    @include atTabletsPortrait {
+        // box model
+        
+        // typography
+        text-align: center;
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        float: right;
+    }
 
     &__input {
         // box model
         height: 36px;
-        width: 300px;
         padding-left: 20px;
         padding-right: 40px;
-
-        // typography
-        text-align: center;
+        width: 100%;
         
         // visual
         border: none;
@@ -21,9 +31,30 @@
         border-radius: 18px;
         transition: width 0.5s ease;
 
-        &:focus {
+        @include atTabletsPortrait {
             // box model
-            width: 500px;
+            width: 520px;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            width: 300px;
+
+            // typography
+            text-align: center;
+        }
+
+        &:focus {
+            @include atTabletsPortrait {
+            }
+
+            @include atTabletsLandscape {
+                // box model
+                width: 500px;
+            }
+
+            & + .search-form__button {
+            }
         }
     }
 
@@ -46,5 +77,13 @@
         border: none;
         outline: none;
         cursor: pointer;
+
+        @include atTabletsPortrait {
+            // positioning
+            right: calc((100% - 500px) / 2);
+
+            // visual
+            transition: right 0.5s ease;
+        }
     }
 }

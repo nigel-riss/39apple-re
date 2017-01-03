@@ -1,4 +1,6 @@
 .logo-n-contacts {
-    // box model
-    width: 400px;
+    @include atTabletsLandscape {
+        // box model
+        width: 400px;
+    }
 }

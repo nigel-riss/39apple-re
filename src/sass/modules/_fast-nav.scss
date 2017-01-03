@@ -16,10 +16,14 @@
         justify-content: space-between;
         margin: 0;
         padding: 0;
-        margin-left: -15px;
 
         // visual
         list-style: none;
+
+        @include atTabletsPortrait {
+            // box model
+            margin-left: -15px;
+        }
     }
 
     li {
@@ -34,7 +38,6 @@
     a {
         // box model
         display: block;
-        padding: 8px 15px;
         height: 100%;
 
         // typography
@@ -49,6 +52,16 @@
         border: 1px solid transparent;
         border-radius: 4px;
 
+        @include atTabletsPortrait {
+            // box model
+            padding: 8px 10px;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            padding: 8px 15px;
+        }
+
         &:hover {
             // visual
             border: 1px solid rgba(255, 255, 255, 0.5);
@@ -59,12 +72,32 @@
         // box model
         display: block;
         margin: 0 auto;
-        height: 64px;
-        width: 64px;
+        height: 32px;
+        width: 32px;
+
+        @include atTabletsLandscape{
+            // box model
+            height: 64px;
+            width: 64px;
+        }
     }
 
     &__text {
         // box model
+        display: none;
         padding-top: 10px;
+
+        @include atTabletsPortrait {
+            // box model
+            display: block;
+
+            // typography
+            font-size: 0.75rem;
+        }
+
+        @include atTabletsLandscape {
+            // typography
+            font-size: 1rem;
+        }
     }
 }
