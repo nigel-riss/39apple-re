@@ -4,13 +4,22 @@
 
     &--news {
         // box model
-        width: calc(100% - 290px);
-        float: left;
+        // display: flex;
+        // justify-content: space-between;
+        // flex-wrap: wrap;
+        // width: 100%;
+
+        @include atTabletsLandscape {
+            // box model
+            width: calc(100% - 290px);
+            float: left;
+            margin-right: 40px;
+        }
     }
 
     &--featured {
         // box model
-        width: 290px;
+        width: 250px;
         float: left;
     }
 
@@ -36,8 +45,11 @@
         // box model
         margin-bottom: 30px;
         padding-bottom: 10px;
-        padding-right: 40px;
 
+        @include atTabletsLandscape {
+            // box model
+            // padding-right: 40px;
+        }
     }
 
     &__title {
@@ -46,11 +58,27 @@
 
         // typography
         font-family: $mainFont;
+        font-size: 1.5rem;
         font-weight: 300;
-        font-size: 2.25rem;
+        line-height: 1.5;
 
         // visual
         border-bottom: 1px solid $secondaryGreen;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1.8rem;
+        }
+
+        @include atTabletsLandscape {
+            // typography
+            font-size: 2rem;
+        }
+
+        @include atDesktop {
+            // typography
+            font-size: 2.25rem;
+        }
     }
 
     &__subtitle {
@@ -59,8 +87,13 @@
 
         // typography
         color: #97a3ab;
-        font-size: 1.125rem;;
-        text-align: right;
+        font-size: 1rem;
+        // text-align: right;
+
+        @include atTabletsLandscape {
+            // typography
+            font-size: 1.125rem;;
+        }
     }
 
     &__text {
@@ -74,7 +107,12 @@
 
         &--larger {
             // typography
-            font-size: 1.25rem;
+            font-size: 1.125rem;
+
+            @include atTabletsLandscape{
+                // typography
+                font-size: 1.25rem;
+            }
         }
     }
 

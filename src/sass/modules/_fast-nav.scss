@@ -75,7 +75,13 @@
         height: 32px;
         width: 32px;
 
-        @include atTabletsLandscape{
+        @include atTabletsLandscape {
+            // box model
+            height: 48px;
+            width: 48px;
+        }
+
+        @include atDesktop{
             // box model
             height: 64px;
             width: 64px;
@@ -96,6 +102,11 @@
         }
 
         @include atTabletsLandscape {
+            // typography
+            font-size: 0.8rem;
+        }
+
+        @include atDesktop {
             // typography
             font-size: 1rem;
         }

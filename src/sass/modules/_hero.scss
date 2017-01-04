@@ -1,7 +1,6 @@
 .hero {
     // box model
-    height: 450px;
-    // background-color: black;
+    // height: 450px;
     margin-top: 20px;
 
     img {
@@ -15,16 +14,36 @@
         margin-bottom: 40px;
         margin-top: 0px;
 
-        // visual
-        background-image: url('../img/repair-bg.jpg');
+        @include atTabletsPortrait {
+            // visual
+            background-image: url('../img/repair-bg.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            // background-size: cover;
+        }
     }
 
     &--exchange {
         // box model
         margin-top: 0px;
 
-        // visual
-        background-image: url('../img/exchange-bg.jpg');
+        @include atTabletsPortrait {
+            // visual
+            background-image: url('../img/exchange-bg.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            height: 300px;
+        }
+
+        @include atDesktop {
+            // box model
+            height: 450px;
+        }
     }
 
     &__caption {
@@ -36,9 +55,24 @@
         // typography
         color: $mainGreen;
         font-family: $mainFont;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 300;
         line-height: 1.3;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 2.2rem;
+        }
+
+        @include atTabletsLandscape {
+            // typography
+            font-size: 2.7rem;
+        }
+
+        @include atDesktop {
+            // typography
+            font-size: 3rem;
+        }
     }
 
     &__list {
@@ -50,21 +84,53 @@
         // visual
         list-style: none;
 
+        @include atTabletsPortrait {
+            // box model
+            padding-top: 40px;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            padding-top: 50px;
+        }
+
+        @include atDesktop {
+            // box model
+            padding-top: 20px;
+        }
+
         & li {
             // box model
             padding: 5px;
 
             // typography
+            font-size: 1rem;
             font-weight: 300;
-            font-size: 1.125rem;
             line-height: 1.5;
+
+            @include atTabletsLandscape {
+                // typography
+                font-size: 1.125rem;
+            }
+
+            &:before {
+                content: "— ";
+
+                // typography
+                color: $mainGreen;
+            }
         }
     }
 
     &__text {
         // typography
         font-weight: 300;
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         line-height: 1.7;
+
+        @include atTabletsLandscape {
+            // typography
+            font-size: 1.5rem;
+        }
     }
 }

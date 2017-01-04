@@ -15,5 +15,11 @@
         // box model
         float: left;
         margin: 0;
+        width: 210px;
+    }
+
+    @include atDesktop {
+        // box model
+        width: 310px;
     }
 }

@@ -9,9 +9,10 @@
         padding: 0 20px;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktop {
         // box model
         width: 1200px;
+        padding: 0;
     }
 
     &:after {
