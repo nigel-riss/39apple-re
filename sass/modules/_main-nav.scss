@@ -56,7 +56,7 @@
         // box model
         display: block;
         padding: 6px 10px;
-        padding-top: 2px;
+        padding-top: 3px;
 
         // typography
         color: #ffffff;
@@ -77,9 +77,10 @@
             font-size: 1.25rem;
         }
 
-        @include atTabletsLandscape {
+        @include atDesktop {
             // box model
             padding: 6px 15px;
+            padding-top: 4px;
 
             // typography
             font-size: 1.5rem;

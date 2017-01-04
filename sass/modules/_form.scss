@@ -1,12 +1,28 @@
 .form {
     // box model
-    margin: 0 200px;
-    padding: 20px 80px;
+    padding: 20px;
     padding-bottom: 40px;
 
     // visual
     background-color: #eeeeee;
     border-radius: 5px;
+
+    @include atTabletsPortrait {
+        // box model
+        padding: 20px 80px;
+        padding-bottom: 40px;
+
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        margin: 0 100px;
+    }
+
+    @include atDesktop {
+        // box model
+        margin: 0 200px;
+    }
 
     &__text-input {
         // box model
