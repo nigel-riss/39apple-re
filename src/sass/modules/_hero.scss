@@ -133,4 +133,25 @@
             font-size: 1.5rem;
         }
     }
+
+    &__slide {
+        &--small {
+            // box model
+            display: block !important;
+
+            @include atTabletsPortrait {
+                // box model
+                display: none !important;
+            }
+        }
+
+        &--big {
+            // box model
+            display: none !important;
+            
+            @include atTabletsPortrait {
+                display: block !important;
+            }
+        }
+    }
 }

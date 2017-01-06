@@ -849,6 +849,16 @@ p {
     @media (min-width: 900px) {
       .hero__text {
         font-size: 1.5rem; } }
+  .hero__slide--small {
+    display: block !important; }
+    @media (min-width: 700px) {
+      .hero__slide--small {
+        display: none !important; } }
+  .hero__slide--big {
+    display: none !important; }
+    @media (min-width: 700px) {
+      .hero__slide--big {
+        display: block !important; } }
 
 .section {
   padding: 40px 0; }
