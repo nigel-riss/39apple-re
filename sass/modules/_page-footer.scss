@@ -14,16 +14,7 @@
     }
 
     &__banks {
-        // box model
-        display: none;
-        vertical-align: top;
-        // border: 1px solid red;
-        padding-top: 35px;
-
-        @include atTabletsLandscape {
-            // box model
-            display: inline-block;
-        }
+        
     }
 
     &__vk-widget {
@@ -32,7 +23,7 @@
         vertical-align: top;
         padding-top: 35px;
 
-        @include atTabletsLandscape {
+        @include atDesktop {
             // box model
             display: inline-block;
         }

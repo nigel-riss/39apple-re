@@ -18,9 +18,14 @@
     }
 
     &--featured {
-        // box model
-        width: 250px;
-        float: left;
+        // typography
+        text-align: center;
+
+        @include atTabletsLandscape {
+            // box model
+            width: 250px;
+            float: left;
+        }
     }
 
     &--catalog-items {
@@ -61,6 +66,7 @@
         font-size: 1.5rem;
         font-weight: 300;
         line-height: 1.5;
+        text-align: left;
 
         // visual
         border-bottom: 1px solid $secondaryGreen;
@@ -88,6 +94,7 @@
         // typography
         color: #97a3ab;
         font-size: 1rem;
+        text-align: left;
         // text-align: right;
 
         @include atTabletsLandscape {
