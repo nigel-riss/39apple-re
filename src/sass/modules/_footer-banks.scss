@@ -1,12 +1,54 @@
 .footer-banks {
     // box model
-    margin-left: -30px;
-    padding-right: 40px;
+    display: none;
+
+    @include atTabletsLandscape {
+        // box model
+        display: block;
+        padding-top: 20px;
+    }
+
+    @include atDesktop {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 35px;
+        margin-left: -30px;
+        padding-right: 40px;
+        width: 200px;
+    }
 
     &__caption {
         // box model
-        padding-bottom: 40px;
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 10px;
+
         // typography
         color: #ffffff;
+
+        @include atDesktop {
+            // box model
+            display: block;
+            padding-bottom: 40px;
+            padding-top: 0;
+        }
+    }
+
+    &__images {
+        // box model
+        float: right;
+    }
+
+    &__bank-image {
+        // box model
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 20px;
+
+        @include atDesktop {
+            // box model
+            padding-bottom: 15px;
+        }
     }
 }

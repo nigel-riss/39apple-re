@@ -1,6 +1,9 @@
 .logo-n-contacts {
-    @include atTabletsLandscape {
+    @include clearfix;
+
+    @include atDesktop {
         // box model
+        display: inline-block;
         width: 400px;
     }
 }

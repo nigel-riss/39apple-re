@@ -24,7 +24,7 @@
         // box model
         display: block;
 
-        @include atTabletsLandscape {
+        @include atDesktop {
             float: left;
             margin-left: -30px;
             margin-top: -20px;
