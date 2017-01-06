@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="import" href="header.html">
     <link rel="import" href="footer.html">
 </head>
@@ -25,7 +27,18 @@
         Hero area (banners, etc.)
     -->
     <div class="hero">
-        <img src="./img/s7.jpg" alt="">
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div class="hero__slide">
+                    <img class="hero__slide--small" src="./img/s7-small.jpg" alt="">
+                    <img class="hero__slide--big" src="./img/s7.jpg" alt="">
+                </div>
+                <div class="hero__slide">
+                    <img class="hero__slide--small" src="./img/ex-hero-small.jpg" alt="">
+                    <img class="hero__slide--big" src="./img/ex-hero.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
     <!--
         Main
@@ -176,6 +189,8 @@
         document.body.appendChild(footerElement.cloneNode(true));
     </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="http://maps.api.2gis.ru/1.0"></script>
     <script src="js/granim.js"></script>
     <script src="js/scripts.js"></script>

@@ -1,5 +1,14 @@
 ;
-console.log('hi');
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      autoplayHoverPause: true
+  });
+});
 
 // var granimInstance = new Granim({
 //     element: '.page-header__canvas',
@@ -35,6 +44,7 @@ console.log('hi');
 //     }
 // });
 
+/*
 // Создаем обработчик загрузки страницы:  
 DG.autoload(function () {
     // Создаем объект карты, связанный с контейнером:  
@@ -69,3 +79,4 @@ DG.autoload(function () {
     // Добавить маркер на карту: 
     myMap.markers.add(myMarker);
 });
+*/
