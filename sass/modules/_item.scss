@@ -1,0 +1,135 @@
+.item {
+    &__photos {
+        @include clearfix;
+
+        // typography
+        font-size: 0;
+
+        @include atTabletsLandscape {
+            width: 400px;
+            float: left;
+        }
+    }
+
+    &__main-photo {
+        // visual
+        border: 1px solid $lightGreen;
+
+        @include atTabletsPortrait {
+            // box model
+            width: 500px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            width: 400px;
+            margin-bottom: 15px;
+            float: clear;
+        }
+
+        img {
+            // box model
+            width: 100%;
+        }
+    }
+
+    &__thumb {
+        // box model
+        display: none;
+        // visual
+        border: 1px solid $lightGreen;
+
+        @include atTabletsPortrait {
+            // box model
+            display: inline-block;
+            margin-bottom: 15px;
+            width: calc(100% - 520px);
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            width: 125px;
+            height: 100px;
+            margin-right: 12px;
+
+            &:nth-of-type(4n) {
+                // box model
+                margin-right: 0;
+            }
+        }
+
+        img {
+            // box model
+            display: block;
+            height: 100%;
+            margin: 0 auto;
+
+            @include atTabletsPortrait {
+                // box model
+                width: 48%;
+            }
+
+            @include atTabletsLandscape {
+                // box model
+                width: auto;
+            }
+        }
+    }
+
+    &__description {
+        @include atTabletsLandscape {
+            // box model
+            width: calc(100% - 401px);
+            float: right;
+            padding-left: 20px;
+            margin-top: -15px;
+        }
+
+        h3 {
+            // typography
+            color: $mainGreen;
+            font-weight: 400;
+        }
+
+        p {
+            // typography
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        table {
+            // box model
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            // box model
+            padding: 10px;
+
+            // typography
+            font-size: 0.815rem;
+            font-weight: 400;
+            
+            // visual
+            border: 1px solid $lightGreen;
+        }
+    }
+
+    &__price {
+        // box model
+        display: inline-block;
+        padding: 10px 20px;
+
+        // typography
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 300;
+
+        // visual
+        background-color: $mainGreen;
+        border-radius: 19px;
+    }
+}

@@ -46,6 +46,10 @@
         border: 1px solid red;
     }
 
+    &--item {
+        @include clearfix;
+    }
+
     &__header {
         // box model
         margin-bottom: 30px;
@@ -69,7 +73,7 @@
         text-align: left;
 
         // visual
-        border-bottom: 1px solid $secondaryGreen;
+        border-bottom: 1px solid $lightGreen;
 
         @include atTabletsPortrait {
             // typography

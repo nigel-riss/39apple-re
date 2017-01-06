@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="import" href="header.html">
+    <link rel="import" href="footer.html">
+</head>
+
+<body>
+    <!--
+        Page header
+    -->
+    <script>
+        var headerLink = document.querySelector('link[rel="import"][href="header.html"]');
+        var headerContent = headerLink.import;
+        var headerElement = headerContent.querySelector('.page-header');
+        document.body.appendChild(headerElement.cloneNode(true));
+    </script>
+
+    <!--
+        Hero
+    -->
+    <!--<div class="container">
+        <div class="hero"> 
+            
+        </div>
+    </div>-->
+
+    <!--
+        Main
+    -->
+    <main>
+        <div class="container">
+
+            <section class="section section--item item">
+                <header class="section__header">
+                    <h2 class="section__title">Apple iPhone 4s 16Gb RFB</h2>
+                </header>
+
+                <div class="item__photos">
+                    <div class="item__main-photo"><img src="./img/item-imgs/item-big-1.jpg" alt=""></div>
+                    <div class="item__thumb"><img src="./img/item-imgs/item-big-1.jpg" alt=""></div>
+                    <div class="item__thumb"><img src="./img/item-imgs/item-big-2.jpg" alt=""></div>
+                    <div class="item__thumb"><img src="./img/item-imgs/item-big-3.jpg" alt=""></div>
+                </div>
+                <div class="item__description">
+                    <h3>Цена за наличный расчет</h3>
+                    <div class="item__price">10 990 руб.</div>
+                    <h3>Описание</h3>
+                    <p>iPhone 4S получил 8-МП сенсор с улучшенной цветопередачей &#40;против 5 МП в iPhone 4&#41; и возможностью съемки видео
+                        в формате Full HD &#40;против 720p ранее&#41;. Мобильник поддерживает сразу два стандарта связи: GSM и CDMA. iPhone
+                        4S базируется iOS 5. Появился «интеллектуальный ассистент» Siri, который распознает сложносоставные вопросы и команды,
+                        произнесенные голосом пользователя, и отвечает на них.</p>
+                    <h3>Характеристики</h3>
+                    <table>
+                        <tr>
+                            <td><i class="fa fa-caret-right"></i> Тип устройства</td>
+                            <td>телефон с iOS</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-caret-right"></i> Связь</td>
+                            <td>3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-caret-right"></i> Вес</td>
+                            <td>140гр</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-caret-right"></i> Тыловая камера</td>
+                            <td>8 млн пикс.</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-caret-right"></i> Фронтальная камера</td>
+                            <td>0.3 млн пикс</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-caret-right"></i> Дополнительные функции</td>
+                            <td>
+                                гироскоп, акселерометр </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--
+        Footer
+    -->
+    <script>
+        var footerLink = document.querySelector('link[rel="import"][href="footer.html"]');
+        var footerContent = footerLink.import;
+        var footerElement = footerContent.querySelector('.page-footer');
+        document.body.appendChild(footerElement.cloneNode(true));
+    </script>
+
+    <script type="text/javascript" src="http://maps.api.2gis.ru/1.0"></script>
+    <script src="js/granim.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

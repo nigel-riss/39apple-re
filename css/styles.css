@@ -884,6 +884,11 @@ p {
     width: 400px;
     float: left;
     border: 1px solid red; }
+  .section--item:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both; }
   .section__header {
     margin-bottom: 30px;
     padding-bottom: 10px; }
@@ -894,7 +899,7 @@ p {
     font-weight: 300;
     line-height: 1.5;
     text-align: left;
-    border-bottom: 1px solid #2ecc71; }
+    border-bottom: 1px solid #c0ebc0; }
     @media (min-width: 700px) {
       .section__title {
         font-size: 1.8rem; } }
@@ -1175,3 +1180,90 @@ p {
     @media (min-width: 1200px) {
       .footer-banks__bank-image {
         padding-bottom: 15px; } }
+
+.item__photos {
+  font-size: 0; }
+  .item__photos:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both; }
+  @media (min-width: 900px) {
+    .item__photos {
+      width: 400px;
+      float: left; } }
+
+.item__main-photo {
+  border: 1px solid #c0ebc0; }
+  @media (min-width: 700px) {
+    .item__main-photo {
+      width: 500px;
+      float: left;
+      margin-right: 15px; } }
+  @media (min-width: 900px) {
+    .item__main-photo {
+      width: 400px;
+      margin-bottom: 15px;
+      float: clear; } }
+  .item__main-photo img {
+    width: 100%; }
+
+.item__thumb {
+  display: none;
+  border: 1px solid #c0ebc0; }
+  @media (min-width: 700px) {
+    .item__thumb {
+      display: inline-block;
+      margin-bottom: 15px;
+      width: calc(100% - 520px); } }
+  @media (min-width: 900px) {
+    .item__thumb {
+      width: 125px;
+      height: 100px;
+      margin-right: 12px; }
+      .item__thumb:nth-of-type(4n) {
+        margin-right: 0; } }
+  .item__thumb img {
+    display: block;
+    height: 100%;
+    margin: 0 auto; }
+    @media (min-width: 700px) {
+      .item__thumb img {
+        width: 48%; } }
+    @media (min-width: 900px) {
+      .item__thumb img {
+        width: auto; } }
+
+@media (min-width: 900px) {
+  .item__description {
+    width: calc(100% - 401px);
+    float: right;
+    padding-left: 20px;
+    margin-top: -15px; } }
+
+.item__description h3 {
+  color: #04b004;
+  font-weight: 400; }
+
+.item__description p {
+  font-size: 1rem;
+  line-height: 1.5; }
+
+.item__description table {
+  width: 100%;
+  border-collapse: collapse; }
+
+.item__description td {
+  padding: 10px;
+  font-size: 0.815rem;
+  font-weight: 400;
+  border: 1px solid #c0ebc0; }
+
+.item__price {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #04b004;
+  border-radius: 19px; }
