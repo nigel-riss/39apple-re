@@ -1,6 +1,8 @@
 .button {
     // box model
-    padding: 15px 30px;
+    padding: 13px 30px;
+    padding-top: 12px;
+    padding-bottom: 14px;
     box-sizing: border-box;
     // height: 50px;
 
@@ -9,6 +11,7 @@
     font-family: $mainFont;
     font-size: 1.125rem;
     font-weight: 400;
+    text-decoration: none;
 
     // visual
     border: none;
@@ -19,6 +22,7 @@
     &:hover {
         // visual
         opacity: 0.8;
+        text-decoration: none;
     }
 
     &:focus {
@@ -28,7 +32,9 @@
 
     &:active {
         // box model
-        padding: 13px 30px;
+        padding: 11px 30px;
+        padding-top: 10px;
+        padding-bottom: 12px;
         
         // typography
         color: $accent;

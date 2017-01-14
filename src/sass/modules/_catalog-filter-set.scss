@@ -1,0 +1,60 @@
+.catalog-filter-set {
+    // positioning
+    position: relative;
+    
+    // box model
+    padding: 10px;
+    // border: 1px solid blue;
+
+    // visual
+    border-bottom: 1px solid #eeeeee;
+
+    &:hover {
+        // visual
+        background-color: #ddeeff;
+    }
+
+    &__title {
+        // box model
+        padding: 10px 0;
+        margin: 0;
+
+        // typography
+        font-weight: 400;
+        // border: 1px solid red;
+    }
+
+    &__toggle {
+        // positioning
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        // box model
+        height: 30px;
+        width: 30px;
+
+        // visual
+        border: 1px solid #ccc;
+        border-radius: 50%;
+
+        &:hover {
+            // visual
+            cursor: pointer;
+        }
+    }
+
+    &__list {
+        // box model
+        margin: 0;
+        padding: 10px 0;
+
+        // visual
+        list-style: none;
+
+        li {
+            // box model
+            padding: 5px 0;
+        }
+    }
+}
