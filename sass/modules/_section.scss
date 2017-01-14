@@ -2,18 +2,22 @@
     // box model
     padding: 40px 0;
 
+    @include clearfix;
+
     &--news {
         // box model
         // display: flex;
         // justify-content: space-between;
         // flex-wrap: wrap;
         // width: 100%;
+        text-align: center;
 
         @include atTabletsLandscape {
             // box model
             width: calc(100% - 290px);
             float: left;
             margin-right: 40px;
+            padding-bottom: 20px;
         }
     }
 
@@ -28,11 +32,13 @@
         }
     }
 
+    &--all-news {
+        // box model
+        padding-bottom: 0;
+    }
+
     &--catalog-items {
         // box model
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
         width: calc(100% - 300px);
         float: right;
         padding-left: 20px;
@@ -43,11 +49,29 @@
         // box model
         width: 300px;
         float: left;
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 
     &--item {
         @include clearfix;
+    }
+
+    &--about {
+        @include atDesktop {
+            // box model
+            width: 50%;
+            padding-right: 20px;
+            float: left;
+        }
+    }
+
+    &--contacts {
+        @include atDesktop {
+            // box model
+            width: 50%;
+            padding-left: 20px;
+            float: right;
+        }
     }
 
     &__header {

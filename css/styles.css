@@ -426,6 +426,12 @@ p {
   p--larger {
     font-size: 1.25rem; }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both; }
+
 .container {
   padding: 0 10px;
   margin: 0 auto; }
@@ -490,10 +496,6 @@ p {
     .menu-button {
       display: none; } }
 
-@media (max-width: 699px) {
-  .contacts {
-    display: none; } }
-
 @media (min-width: 700px) {
   .contacts {
     display: block;
@@ -513,8 +515,10 @@ p {
       margin-top: -20px; } }
 
 .contact {
+  display: none;
   padding-left: 5px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  padding-right: 10px; }
   @media (min-width: 700px) {
     .contact {
       display: inline-block;
@@ -528,6 +532,10 @@ p {
     .contact {
       padding-left: 30px;
       padding-right: 0; } }
+  .contact--phones {
+    display: inline-block; }
+  .contact--loc {
+    display: inline-block; }
   .contact--last {
     padding-right: 0; }
   .contact__info {
@@ -548,8 +556,7 @@ p {
   .contact__icon {
     display: inline-block;
     height: 36px;
-    width: 36px;
-    background-size: 36px 36px; }
+    width: 36px; }
     @media (min-width: 700px) {
       .contact__icon {
         height: 24px;
@@ -772,6 +779,45 @@ p {
       .fast-nav__text {
         font-size: 1rem; } }
 
+.paginator {
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 0; }
+  .paginator__item {
+    display: inline-block;
+    margin-left: 5px; }
+    .paginator__item--current span {
+      display: block;
+      height: 40px;
+      min-width: 40px;
+      padding: 10px 13px;
+      color: #ffffff;
+      font-size: 1rem;
+      border-radius: 20px;
+      background-color: #ff5722; }
+    .paginator__item--seperator span {
+      display: block;
+      width: 40px;
+      height: 40px;
+      padding-top: 10px;
+      color: #ff5722;
+      font-size: 1.5rem; }
+    .paginator__item a {
+      display: block;
+      height: 40px;
+      min-width: 40px;
+      padding: 10px 13px;
+      color: #ff5722;
+      font-size: 1rem;
+      border-radius: 20px;
+      border: 1px solid #ff5722; }
+      .paginator__item a:hover {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #ff5722; }
+
 .hero {
   margin-top: 20px; }
   .hero img {
@@ -862,33 +908,49 @@ p {
 
 .section {
   padding: 40px 0; }
-  @media (min-width: 900px) {
-    .section--news {
-      width: calc(100% - 290px);
-      float: left;
-      margin-right: 40px; } }
+  .section:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both; }
+  .section--news {
+    text-align: center; }
+    @media (min-width: 900px) {
+      .section--news {
+        width: calc(100% - 290px);
+        float: left;
+        margin-right: 40px;
+        padding-bottom: 20px; } }
   .section--featured {
     text-align: center; }
     @media (min-width: 900px) {
       .section--featured {
         width: 250px;
         float: left; } }
+  .section--all-news {
+    padding-bottom: 0; }
   .section--catalog-items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width: calc(100% - 300px);
     float: right;
     padding-left: 20px; }
   .section--catalog-filters {
     width: 300px;
-    float: left;
-    border: 1px solid red; }
+    float: left; }
   .section--item:after {
     content: "";
     display: table;
     width: 100%;
     clear: both; }
+  @media (min-width: 1200px) {
+    .section--about {
+      width: 50%;
+      padding-right: 20px;
+      float: left; } }
+  @media (min-width: 1200px) {
+    .section--contacts {
+      width: 50%;
+      padding-left: 20px;
+      float: right; } }
   .section__header {
     margin-bottom: 30px;
     padding-bottom: 10px; }
@@ -948,6 +1010,7 @@ p {
   margin-bottom: 40px;
   padding: 20px;
   font-size: 0;
+  text-align: left;
   box-shadow: 0 0 5px 0 rgba(20, 66, 88, 0.2);
   border: 1px solid rgba(20, 66, 88, 0.2);
   transition: all 0.2s ease;
@@ -1097,22 +1160,28 @@ p {
     border-radius: 3px; }
 
 .button {
-  padding: 15px 30px;
+  padding: 13px 30px;
+  padding-top: 12px;
+  padding-bottom: 14px;
   box-sizing: border-box;
   color: #ffffff;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
+  text-decoration: none;
   border: none;
   border-radius: 25px;
   background-color: #ff5722;
   cursor: pointer; }
   .button:hover {
-    opacity: 0.8; }
+    opacity: 0.8;
+    text-decoration: none; }
   .button:focus {
     outline: none; }
   .button:active {
-    padding: 13px 30px;
+    padding: 11px 30px;
+    padding-top: 10px;
+    padding-bottom: 12px;
     color: #ff5722;
     border: 2px solid #ff5722;
     background-color: #ffffff; }
@@ -1120,6 +1189,38 @@ p {
     display: block;
     margin: 0 auto;
     margin-top: 40px; }
+
+.catalog-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.catalog-filter-set {
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee; }
+  .catalog-filter-set:hover {
+    background-color: #ddeeff; }
+  .catalog-filter-set__title {
+    padding: 10px 0;
+    margin: 0;
+    font-weight: 400; }
+  .catalog-filter-set__toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%; }
+    .catalog-filter-set__toggle:hover {
+      cursor: pointer; }
+  .catalog-filter-set__list {
+    margin: 0;
+    padding: 10px 0;
+    list-style: none; }
+    .catalog-filter-set__list li {
+      padding: 5px 0; }
 
 .page-footer {
   position: relative;
@@ -1256,8 +1357,13 @@ p {
 .item__description td {
   padding: 10px;
   font-size: 0.815rem;
-  font-weight: 400;
-  border: 1px solid #c0ebc0; }
+  font-weight: 400; }
+
+.item__description tr:nth-child(2n) {
+  background-color: #f1f1f1; }
+
+.item__description tr:hover {
+  background-color: #ddeeff; }
 
 .item__price {
   display: inline-block;
