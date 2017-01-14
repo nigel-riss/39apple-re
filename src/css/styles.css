@@ -877,11 +877,11 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: calc(100% - 400px);
+    width: calc(100% - 300px);
     float: right;
     padding-left: 20px; }
   .section--catalog-filters {
-    width: 400px;
+    width: 300px;
     float: left;
     border: 1px solid red; }
   .section--item:after {
