@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     toggleFiltersOff.click(function() {
         filtersDiv.hide();
-    })
+    });
 
     // filters set
     var toggleSets = $('.catalog-filter-set__toggle');
@@ -20,5 +20,5 @@ $(document).ready(function() {
         $(this).parent().children('.catalog-filter-set__filters').toggle();
         $(this).toggleClass('catalog-filter-set__toggle--on');
         $(this).toggleClass('catalog-filter-set__toggle--off');
-    })
+    });
 });
