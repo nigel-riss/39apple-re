@@ -1322,7 +1322,7 @@ p {
   margin: 0;
   width: 100%;
   background-color: #fff;
-  box-shadow: 0 0 10px 0 #144258; }
+  box-shadow: 0 0 7px 0 #555; }
   @media (min-width: 700px) {
     .filters-header {
       display: none; } }

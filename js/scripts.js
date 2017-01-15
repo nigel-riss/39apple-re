@@ -1,5 +1,9 @@
 ;
 $(document).ready(function(){
+  $('#menu-button').click(function() {
+      $('#main-nav').toggle();
+  });
+
   $(".owl-carousel").owlCarousel({
       items: 1,
       loop: true,
