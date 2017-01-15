@@ -24,11 +24,24 @@
         Main
     -->
     <main>
+        <nav class="catalog-nav">
+            <div class="container">
+                <h2 class="catalog-nav__caption">
+                    iPhone <span>(12)</span>
+                </h2>
+
+                <ul>
+                    <li><a href="#">Телефоны</a></li>
+                    <li><a href="#">Apple</a></li>
+                    <li>iPhone</li>
+                </ul>
+            </div>
+        </nav>
         <div class="container">
             <div class="section section--catalog-filters">
                 <div class="catalog-filter-set">
                     <h3 class="catalog-filter-set__title">Категория</h3>
-                    <div class="catalog-filter-set__toggle">+</div>
+                    <div class="catalog-filter-set__toggle  catalog-filter-set__toggle--on"></div>
                     <ul class="catalog-filter-set__list">
                         <li><a href="">Телефоны</a></li>
                         <li><a href="">Планшеты</a></li>
@@ -42,27 +55,32 @@
                 </div>
 
                 <div class="catalog-filter-set">
-                    <h3 class="catalog-filter-set__title">Бренды</h3>
-                    <div class="catalog-filter-set__toggle">+</div>
+                    <h3 class="catalog-filter-set__title">Производитель</h3>
+                    <div class="catalog-filter-set__toggle  catalog-filter-set__toggle--on"></div>
                     <ul class="catalog-filter-set__list">
-                        <li><a href="">Телефоны</a></li>
-                        <li><a href="">Планшеты</a></li>
-                        <li><a href="">Mac</a></li>
-                        <li><a href="">Носимая электроника</a></li>
-                        <li><a href="">Плееры</a></li>
-                        <li><a href="">Игровые приставки</a></li>
-                        <li><a href="">Видеорегистраторы и GPS</a></li>
-                        <li><a href="">Аксессуары</a></li>
+                        <li><a href="">Apple</a></li>
+                        <li><a href="">Samsung</a></li>
+                        <li><a href="">Sony</a></li>
+                        <li><a href="">Lenovo</a></li>
+                        <li><a href="">ASUS</a></li>
+                        <li><a href="">Xiaomi</a></li>
+                        <li><a href="">Meizy</a></li>
+                        <li><a href="">LG</a></li>
                     </ul>
                 </div>
 
                 <div class="catalog-filter-set">
                     <h3 class="catalog-filter-set__title">Цена</h3>
-                    <div class="catalog-filter-set__toggle">+</div>
+                    <div class="catalog-filter-set__toggle  catalog-filter-set__toggle--off"></div>
                 </div>
             </div>
 
             <div class="section section--catalog-items">
+                <ul class="catalog-sorting">
+                    <li class="catalog-sorting__item catalog-sorting__item--down"><a href="#">по цене</a></li>
+                    <li class="catalog-sorting__item catalog-sorting__item--down"><a href="#">по названию</a></li>
+                    <li class="catalog-sorting__item catalog-sorting__item--up"><a href="#">по популярности</a></li>
+                </ul>
                 <div class="catalog-items">
                     <a href="#">
                         <div class="shop-item">

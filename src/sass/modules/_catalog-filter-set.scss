@@ -3,7 +3,6 @@
     position: relative;
     
     // box model
-    padding: 10px;
     // border: 1px solid blue;
 
     // visual
@@ -11,43 +10,56 @@
 
     &:hover {
         // visual
-        background-color: #ddeeff;
+        // background-color: #ddeeff;
     }
 
     &__title {
         // box model
-        padding: 10px 0;
+        padding: 20px;
+        padding-left: 0;
         margin: 0;
 
         // typography
         font-weight: 400;
         // border: 1px solid red;
+        // background-color: #f1f1f1;
+        line-height: 1;
     }
 
     &__toggle {
         // positioning
         position: absolute;
-        top: 20px;
+        top: 18px;
         right: 20px;
 
         // box model
-        height: 30px;
-        width: 30px;
+        height: 24px;
+        width: 24px;
 
         // visual
-        border: 1px solid #ccc;
-        border-radius: 50%;
+        // border: 1px solid #ccc;
+        // border-radius: 50%;
+        opacity: 0.54;
 
         &:hover {
             // visual
             cursor: pointer;
+        }
+
+        &--on {
+            background-image: url('../img/toggle-on.svg');
+        }
+
+        &--off {
+            background-image: url('../img/toggle-off.svg');
         }
     }
 
     &__list {
         // box model
         margin: 0;
-        padding: 10px 0;
+        padding: 10px 0px;
+        padding-bottom: 20px;
 
         // visual
         list-style: none;
