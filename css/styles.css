@@ -1313,32 +1313,33 @@ p {
     .catalog-nav li:last-of-type:after {
       content: ""; }
 
-@media (min-width: 700px) {
-  .filters-header {
-    display: none; } }
-
-.filters-header__caption {
+.filters-header {
   position: fixed;
-  top: 0px;
+  top: 0;
   left: 0;
   z-index: 2;
   padding: 20px;
   margin: 0;
   width: 100%;
-  font-weight: 400;
   background-color: #fff;
   box-shadow: 0 0 10px 0 #144258; }
-
-.filters-header__toggle {
-  position: absolute;
-  top: 23px;
-  right: 20px;
-  z-index: 3;
-  height: 24px;
-  width: 24px;
-  background-image: url("../img/filters-toggle.svg");
-  cursor: pointer;
-  opacity: 0.54; }
+  @media (min-width: 700px) {
+    .filters-header {
+      display: none; } }
+  .filters-header__caption {
+    margin: 0;
+    padding: 0;
+    font-weight: 400; }
+  .filters-header__toggle {
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    z-index: 3;
+    height: 24px;
+    width: 24px;
+    background-image: url("../img/filters-toggle.svg");
+    cursor: pointer;
+    opacity: 0.54; }
 
 .filters-button {
   position: absolute;
