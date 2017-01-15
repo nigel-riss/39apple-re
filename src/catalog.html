@@ -39,11 +39,15 @@
             </div>
         </nav>
         <div class="container">
-            <div class="section section--catalog-filters">
+            <div id="filters" class="section section--catalog-filters">
+                <header class="filters-header">
+                    <h2 class="filters-header__caption">Фильтры</h2>
+                    <div id="toggle-filters-off" class="filters-header__toggle"></div>
+                </header>
                 <div class="catalog-filter-set">
                     <h3 class="catalog-filter-set__title">Категория</h3>
                     <div class="catalog-filter-set__toggle  catalog-filter-set__toggle--on"></div>
-                    <ul class="catalog-filter-set__list">
+                    <ul class="catalog-filter-set__filters">
                         <li><a href="">Телефоны</a></li>
                         <li><a href="">Планшеты</a></li>
                         <li><a href="">Mac</a></li>
@@ -58,7 +62,7 @@
                 <div class="catalog-filter-set">
                     <h3 class="catalog-filter-set__title">Производитель</h3>
                     <div class="catalog-filter-set__toggle  catalog-filter-set__toggle--on"></div>
-                    <ul class="catalog-filter-set__list">
+                    <ul class="catalog-filter-set__filters">
                         <li><a href="">Apple</a></li>
                         <li><a href="">Samsung</a></li>
                         <li><a href="">Sony</a></li>
@@ -77,6 +81,7 @@
             </div>
 
             <div class="section section--catalog-items">
+                <div id="toggle-filters-on" class="filters-button">фильтр</div>
                 <ul class="catalog-sorting">
                     <li class="catalog-sorting__item catalog-sorting__item--down"><a href="#">по цене</a></li>
                     <li class="catalog-sorting__item catalog-sorting__item--down"><a href="#">по названию</a></li>
@@ -252,9 +257,10 @@
         document.body.appendChild(footerElement.cloneNode(true));
     </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://maps.api.2gis.ru/1.0"></script>
     <script src="js/granim.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/catalog.js"></script>
 </body>
 
 </html>

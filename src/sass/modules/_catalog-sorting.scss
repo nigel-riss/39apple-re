@@ -1,7 +1,7 @@
 .catalog-sorting {
     // box model
     margin: 0;
-    padding: 20px;
+    padding: 15px 0;
     padding-right: 24px;
     margin-bottom: 20px;
 
@@ -15,8 +15,14 @@
 
     &__item {
         // box model
-        display: inline-block;
-        padding-left: 40px;
+        display: block;
+        padding: 5px;
+
+        @include atTabletsLandscape {
+            // box model
+            display: inline-block;
+            padding-left: 40px;
+        }
 
         &--down:after {
             // border: 1px solid red;
