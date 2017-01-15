@@ -602,9 +602,11 @@ p {
 
 .main-nav {
   position: relative;
+  display: none;
   padding-bottom: 10px; }
   @media (min-width: 700px) {
     .main-nav {
+      display: block;
       padding: 10px 0; } }
   @media (min-width: 900px) {
     .main-nav {

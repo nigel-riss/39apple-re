@@ -3,6 +3,7 @@
     position: relative;
 
     // box model
+    display: none;
     padding-bottom: 10px;
     
     // visual
@@ -11,6 +12,7 @@
 
     @include atTabletsPortrait {
         // box model
+        display: block;
         padding: 10px 0;
     }
 
