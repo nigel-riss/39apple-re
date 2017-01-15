@@ -1,27 +1,31 @@
 .filters-header {
+    // positioning
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    // box model
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+
+    // visual
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 $darkBlue;
+
     @include atTabletsPortrait {
         // box model
         display: none;
     }
 
     &__caption {
-        // positioning
-        position: fixed;
-        top: 0px;
-        left: 0;
-        z-index: 2;
-
         // box model
-        padding: 20px;
         margin: 0;
-        width: 100%;
+        padding: 0;
 
         // typography
         font-weight: 400;
-
-        // visual
-        background-color: #fff;
-        box-shadow: 0 0 10px 0 $darkBlue;
     }
 
     &__toggle {
