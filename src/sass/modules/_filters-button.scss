@@ -1,0 +1,27 @@
+.filters-button {
+    // positioning
+    position: absolute;
+    top: 30px;
+
+    // box model
+    height: 36px;
+    padding: 8px 15px;
+    padding-left: 30px;
+
+    // typography
+    color: #fff;
+
+    // visual
+    background-color: $accent;
+    background-image: url('../img/filter.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 16px 16px;
+    border-radius: 18px;
+    cursor: pointer;
+
+    @include atTabletsPortrait {
+        // box model
+        display: none;
+    }
+}

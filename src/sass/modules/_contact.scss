@@ -1,7 +1,9 @@
 .contact {
     // box model
+    display: none;
     padding-left: 5px;
     padding-bottom: 10px;
+    padding-right: 10px;
 
     @include atTabletsPortrait {
         // box model
@@ -22,7 +24,18 @@
         padding-right: 0;
     }
 
+    &--phones {
+        // box model
+        display: inline-block;
+    }
+
+    &--loc {
+        // box model
+        display: inline-block;
+    }
+
     &--last {
+        // box model
         padding-right: 0;
     }
 
@@ -59,8 +72,8 @@
         height: 36px;
         width: 36px;
 
-        // visual
-        background-size: 36px 36px;
+        // // visual
+        // background-size: 36px 36px;
 
         @include atTabletsPortrait {
             height: 24px;

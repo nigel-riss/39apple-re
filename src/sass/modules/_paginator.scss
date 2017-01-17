@@ -1,0 +1,75 @@
+.paginator {
+    // box model
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 40px;
+
+    // typography
+    text-align: center;
+    font-size: 0;
+
+    &__item {
+        // box model
+        display: inline-block;
+        margin-left: 5px;
+        margin-bottom: 10px;
+
+        &--current {
+            span {
+                // box model
+                display: block;
+                height: 40px;
+                min-width: 40px;
+                padding: 10px 13px;
+
+                // typography
+                color: #ffffff;
+                font-size: 1rem;
+
+                // visual
+                border-radius: 20px;
+                background-color: $accent;
+            }
+        }
+
+        &--seperator {
+            span {
+                // box model
+                display: block;
+                width: 40px;
+                height: 40px;
+                padding-top: 10px;
+
+                // typography
+                color: $accent;
+                font-size: 1.5rem;
+            }
+        }
+        
+        a {
+            // box model
+            display: block;
+            height: 40px;
+            min-width: 40px;
+            padding: 10px 13px;
+
+            // typography
+            color: $accent;
+            font-size: 1rem;
+
+            // visual
+            border-radius: 20px;
+            border: 1px solid $accent; 
+
+            &:hover {
+                // typography
+                color: #ffffff;
+                text-decoration: none;
+                
+                // visual
+                background-color: $accent;
+                // opacity: 0.8;
+            }
+        }
+    }
+}
