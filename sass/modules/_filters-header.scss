@@ -1,0 +1,48 @@
+.filters-header {
+    // positioning
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    // box model
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+
+    // visual
+    background-color: #fff;
+    box-shadow: 0 0 7px 0 #555;
+
+    @include atTabletsPortrait {
+        // box model
+        display: none;
+    }
+
+    &__caption {
+        // box model
+        margin: 0;
+        padding: 0;
+
+        // typography
+        font-weight: 400;
+    }
+
+    &__toggle {
+        // positioning
+        position: absolute;
+        top: 23px;
+        right: 20px;
+        z-index: 3;
+
+        // box model
+        height: 24px;
+        width: 24px;
+
+        // visual
+        background-image: url('../img/filters-toggle.svg');
+        cursor:pointer;
+        opacity: 0.54;
+        // border: 1px solid red;
+    }
+}

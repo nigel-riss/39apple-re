@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="import" href="header.html">
@@ -38,7 +39,7 @@
             <!--
                 News
             -->
-            <section class="section">
+            <section class="section  section--all-news">
                 <header class="section__header">
                     <h2 class="section__title">Новости</h2>
                     <p class="section__subtitle">то, о чем мы хотим вам рассказать</p>
@@ -109,6 +110,15 @@
                 </a>
             </section>
 
+            <ul class="paginator">
+                <li class="paginator__item"><a href="#">&larr; назад</a></li>
+                <li class="paginator__item  paginator__item--current"><span>1</span></li>
+                <li class="paginator__item"><a href="#">2</a></li>
+                <li class="paginator__item"><a href="#">3</a></li>
+                <li class="paginator__item  paginator__item--seperator"><span>...</span></li>
+                <li class="paginator__item"><a href="#">6</a></li>
+                <li class="paginator__item"><a href="#">вперед &rarr;</a></li>
+            </ul>
         </div>
     </main>
     <!--

@@ -1,0 +1,79 @@
+.catalog-filter-set {
+    // positioning
+    position: relative;
+    
+    // box model
+    // border: 1px solid blue;
+
+    // visual
+    border-bottom: 1px solid #eeeeee;
+
+    &:hover {
+        // visual
+        // background-color: #ddeeff;
+    }
+
+    &__title {
+        // box model
+        padding: 20px;
+        margin: 0;
+
+        // typography
+        font-weight: 400;
+        // border: 1px solid red;
+        // background-color: #f1f1f1;
+        line-height: 1;
+        
+        @include atTabletsPortrait {
+            padding-left: 0;
+        }
+    }
+
+    &__toggle {
+        // positioning
+        position: absolute;
+        top: 18px;
+        right: 20px;
+
+        // box model
+        height: 24px;
+        width: 24px;
+
+        // visual
+        // border: 1px solid #ccc;
+        // border-radius: 50%;
+        opacity: 0.54;
+
+        &:hover {
+            // visual
+            cursor: pointer;
+        }
+
+        &--on {
+            background-image: url('../img/toggle-on.svg');
+        }
+
+        &--off {
+            background-image: url('../img/toggle-off.svg');
+        }
+    }
+
+    &__list {
+        // box model
+        margin: 0;
+        padding: 10px 20px;
+        padding-bottom: 20px;
+
+        // visual
+        list-style: none;
+
+        @include atTabletsPortrait{
+            padding-left: 0;
+        }
+
+        li {
+            // box model
+            padding: 5px 0;
+        }
+    }
+}
