@@ -8,6 +8,7 @@ var gulp = require('gulp'),
 var sassPath = './src/sass/**/*.scss';
 var cssPath = './src/css/';
 var htmlPath = './src/*.html';
+var jsPath = './src/js';
 
 console.log('watch BY ME');
 
@@ -48,5 +49,9 @@ gulp.task('watch', function() {
 
     watch(sassPath, function() {
         gulp.start('sassSync');
+    });
+    
+    watch(jsPath, function() {
+        browserSync.reload();
     })
 });

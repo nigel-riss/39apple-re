@@ -68,51 +68,51 @@
         Fast navigation for catalog
     -->
     <nav class="fast-nav">
-        <div class="container">
-            <ul>
-                <li class="has-dropdown phones" data-content="phones">
+        <div class="container container--relative-z-1">
+            <ul id="fast-nav" class="fast-nav__list">
+                <li class="fast-nav__item fast-nav__item--has-dropdown" data-content="phones">
                     <a href="#">
                         <img src="img/icons/phones.svg" alt="">
                         <div class="fast-nav__text">Телефоны</div>
                     </a>
                 </li>
-                <li>
+                <li class="fast-nav__item fast-nav__item--has-dropdown" data-content="tablets">
                     <a href="#">
                         <img src="img/icons/tablet.svg" alt="">
                         <div class="fast-nav__text">Планшеты</div>
                     </a>
                 </li>
-                <li>
+                <li class="fast-nav__item  fast-nav__item--has-dropdown" data-content="mac">
                     <a href="#">
                         <img src="img/icons/imac.svg" alt="">
                         <div class="fast-nav__text">Mac</div>
                     </a>
                 </li>
-                <li>
+                <li class="fast-nav__item  fast-nav__item--has-dropdown" data-content="gear">
                     <a href="#">
                         <img src="img/icons/watch.svg" alt="">
                         <div class="fast-nav__text">Носимая<br>электроника</div>
                     </a>
                 </li>
-                <li>
+                <li class="fast-nav__item">
                     <a href="#">
                         <img src="img/icons/headphones.svg" alt="">
                         <div class="fast-nav__text">Плееры</div>
                     </a>
                 </li>
-                <li>
+                <li class="fast-nav__item">
                     <a href="#">
                         <img src="img/icons/console.svg" alt="">
                         <div class="fast-nav__text">Игровые<br>приставки</div>
                     </a>
                 </li>
-                <li>
+                <li class="fast-nav__item">
                     <a href="#">
                         <img src="img/icons/antenna.svg" alt="">
                         <div class="fast-nav__text">Видеорегистраторы<br>и GPS</div>
                     </a>
                 </li>
-                <li>
+                <li class="fast-nav__item fast-nav__item--has-dropdown" data-content="accessories">
                     <a href="#">
                         <img src="img/icons/accessories.svg" alt="">
                         <div class="fast-nav__text">Аксессуары</div>
@@ -120,61 +120,48 @@
                 </li>
             </ul>
 
-            <div class="dropdown">
-                <ul class="dropdown__list">
-                    <li class="dropdown__item">
-                        <ul>
-                            <li>Apple iPhone</li>
-                            <li>Android</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown__item">
-                        <ul>
-                            <li>Macbook</li>
-                            <li>iMac</li>
-                            <li>Mac mini</li>
-                            <li>Mac pro</li>
-                            <li>Мыши и клавиатуры</li>
-                            <li>Сетевое оборудование</li>
-                            <li>Apple TV</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown__item">
-                        <ul>
-                            <li>Apple Watch</li>
-                            <li>Фитнесс браслеты</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown__item">
-                        <ul>
-                            <li>Чехлы и накладки</li>
-                            <li>Защитные пленки и стекла</li>
-                            <li>Зарядные устройства</li>
-                            <li>Кабеля и наушники</li>
-                            <li>Колонки</li>
-                            <li>Крепления и док станции</li>
-                            <li>Прочее</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            <ul id="dropdown" class="fast-nav__dropdown dropdown">
+                <li id="dropdown-phones" class="dropdown__item">
+                    <ul>
+                        <li><a href="#">Apple iPhone</a></li>
+                        <li><a href="#">Android</a></li>
+                    </ul>
+                </li>
+                <li id="dropdown-tablets" class="dropdown__item">
+                    <ul>
+                        <li><a href="#">Apple iPhone</a></li>
+                        <li><a href="#">Android</a></li>
+                    </ul>
+                </li>
+                <li id="dropdown-mac" class="dropdown__item">
+                    <ul>
+                        <li><a href="#">Macbook</a></li>
+                        <li><a href="#">iMac</a></li>
+                        <li><a href="#">Mac mini</a></li>
+                        <li><a href="#">Mac pro</a></li>
+                        <li><a href="#">Мыши и клавиатуры</a></li>
+                        <li><a href="#">Сетевое оборудование</a></li>
+                        <li><a href="#">Apple TV</a></li>
+                    </ul>
+                </li>
+                <li id="dropdown-gear" class="dropdown__item">
+                    <ul>
+                        <li><a href="#">Apple Watch</a></li>
+                        <li><a href="#">Фитнесс браслеты</a></li>
+                    </ul>
+                </li>
+                <li id="dropdown-accessories" class="dropdown__item">
+                    <ul>
+                        <li><a href="#">Чехлы и накладки</a></li>
+                        <li><a href="#">Защитные пленки и стекла</a></li>
+                        <li><a href="#">Зарядные устройства</a></li>
+                        <li><a href="#">Кабеля и наушники</a></li>
+                        <li><a href="#">Колонки</a></li>
+                        <li><a href="#">Крепления и док станции</a></li>
+                        <li><a href="#">Прочее</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </nav>
-
-    <!--<div class="morph-dropdown-wrapper">
-        <div class="dropdown-list">
-            <ul>
-                <li id="phones" class="dropdown">
-
-                </li>
-                <li class="dropdown"></li>
-                <li class="dropdown"></li>
-                <li class="dropdown"></li>
-                <li class="dropdown"></li>
-                <li class="dropdown"></li>
-            </ul>
-
-            <div class="dropdown-list__bg" area-hidden="true"></div>
-        </div>
-    </div>-->
 </header>

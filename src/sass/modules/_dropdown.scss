@@ -1,0 +1,83 @@
+.dropdown {
+    // positioning
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    // box model
+    display: none;
+    // height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+
+    @include atTabletsLandscape {
+        // box model
+        display: block;
+    }
+
+    &__item {
+        // positioning
+        position: absolute;
+        top: 135px;
+        
+        // box model
+        display: block;
+        padding: 20px;
+
+        // visual
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.54);
+        visibility: hidden;
+
+        &:before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            z-index: 20;
+            transform: rotate(45deg);
+            left: 50%;
+            left: calc(50% - 10px);
+            top: -5px;
+
+            // box model
+            // border: 1px solid red;
+            height: 20px;
+            width: 20px;
+            
+            // visual
+            background-color: #fff;
+        }
+
+        &--show {
+            visibility: visible;
+        }
+
+        ul {
+            // box model
+            margin: 0;
+            padding: 0;
+
+            // visual
+            list-style: none;
+        }
+
+        li {
+            // 
+        }
+
+        a {
+            // typography
+            color: $mainGreen;
+            font-weight: 400;
+
+            &:hover {
+                // typography
+                text-decoration: underline;
+            }
+        }
+    }
+}

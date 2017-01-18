@@ -1,6 +1,7 @@
 .fast-nav {
     // positioning
     position: relative;
+    z-index: 9999;
     
     // box model
     padding: 15px 0;
@@ -10,7 +11,7 @@
     background-color: $mainGreen;
     background-image: linear-gradient(to right, $darkBlue, $marine);
 
-    ul {
+    &__list {
         // box model
         display: flex;
         justify-content: space-between;
@@ -26,7 +27,7 @@
         }
     }
 
-    li {
+    &__item {
         // box model
         display: inline-block;
         vertical-align: top;
