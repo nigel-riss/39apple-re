@@ -797,7 +797,7 @@ p {
       display: block; } }
   .dropdown__item {
     position: absolute;
-    top: 135px;
+    top: 130px;
     display: block;
     padding: 20px;
     background-color: #fff;
@@ -865,7 +865,7 @@ p {
       .paginator__item a:hover {
         color: #ffffff;
         text-decoration: none;
-        background-color: #ff5722; }
+        background-color: #04b004; }
 
 .hero {
   margin-top: 20px; }
