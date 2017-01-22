@@ -28,7 +28,8 @@
 
                 // visual
                 border-radius: 20px;
-                background-color: $accent;
+                background-color: $mainGreen;
+                border: 1px solid $mainGreen;
             }
         }
 
@@ -41,7 +42,7 @@
                 padding-top: 10px;
 
                 // typography
-                color: $accent;
+                color: $copyColor;
                 font-size: 1.5rem;
             }
         }
@@ -54,12 +55,12 @@
             padding: 10px 13px;
 
             // typography
-            color: $accent;
+            color: $copyColor;
             font-size: 1rem;
 
             // visual
             border-radius: 20px;
-            border: 1px solid $accent; 
+            border: 1px solid rgba(0, 0, 0, 0.4); 
 
             &:hover {
                 // typography
@@ -68,6 +69,7 @@
                 
                 // visual
                 background-color: $mainGreen;
+                border: 1px solid $mainGreen;
                 // opacity: 0.8;
             }
         }
