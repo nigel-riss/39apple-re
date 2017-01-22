@@ -20,6 +20,12 @@
 
     @include atDesktop {
         // box model
-        width: 310px;
+        width: 230px;
+    }
+
+    img {
+        // box model
+        display: block;
+        width: 100%;
     }
 }

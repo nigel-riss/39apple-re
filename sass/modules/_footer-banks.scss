@@ -45,9 +45,12 @@
         display: inline-block;
         vertical-align: middle;
         padding-left: 20px;
+        width: 130px;
 
         @include atDesktop {
             // box model
+            width: 150px;
+            padding-left: 0px;
             padding-bottom: 15px;
         }
     }
