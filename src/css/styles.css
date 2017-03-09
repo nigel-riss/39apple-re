@@ -439,9 +439,9 @@ p {
   @media (min-width: 700px) {
     .container {
       padding: 0 20px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1100px) {
     .container {
-      width: 1200px;
+      width: 1080px;
       padding: 0 10px; } }
   .container:after {
     content: "";
@@ -482,7 +482,7 @@ p {
       float: left;
       margin: 0;
       width: 210px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1100px) {
     .logo {
       width: 230px; } }
   .logo img {
@@ -512,7 +512,7 @@ p {
 
 .contacts--footer {
   display: block; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1100px) {
     .contacts--footer {
       float: left;
       margin-left: -30px;
@@ -533,7 +533,7 @@ p {
   @media (min-width: 900px) {
     .contact {
       padding-top: 20px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1100px) {
     .contact {
       padding-left: 30px;
       padding-right: 0; } }
@@ -553,7 +553,7 @@ p {
     @media (min-width: 700px) {
       .contact__info {
         font-size: 0.75rem; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .contact__info {
         font-size: 1rem; } }
     .contact__info--call {
@@ -570,7 +570,7 @@ p {
         height: 24px;
         width: 24px;
         background-size: 24px 24px; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .contact__icon {
         height: 36px;
         width: 36px;
@@ -583,7 +583,7 @@ p {
       background-image: url(../img/call.svg); }
   .contact__phone--ml {
     margin-left: 7px; }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .contact__phone--ml {
         margin-left: 10px; } }
   .contact__phone a {
@@ -601,7 +601,7 @@ p {
     @media (min-width: 700px) {
       .contact__phone a {
         font-size: 0.75rem; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .contact__phone a {
         font-size: 0.875rem; } }
     .contact__phone a:hover {
@@ -609,6 +609,7 @@ p {
       background-color: #ffffff; }
   .contact__map {
     position: absolute;
+    display: none;
     height: 300px;
     width: 300px;
     background-color: red; }
@@ -660,7 +661,7 @@ p {
       .main-nav a {
         padding: 6px 12px;
         font-size: 1.25rem; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .main-nav a {
         padding: 6px 15px;
         padding-top: 4px;
@@ -708,9 +709,9 @@ p {
         width: 300px;
         height: 35px;
         text-align: center; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .search-form__input:focus {
-        width: 500px; } }
+        width: 400px; } }
   .search-form__button {
     position: absolute;
     right: 12px;
@@ -777,7 +778,7 @@ p {
       .fast-nav img {
         height: 48px;
         width: 48px; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .fast-nav img {
         height: 64px;
         width: 64px; } }
@@ -791,7 +792,7 @@ p {
     @media (min-width: 900px) {
       .fast-nav__text {
         font-size: 0.8rem; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .fast-nav__text {
         font-size: 1rem; } }
 
@@ -804,7 +805,7 @@ p {
   margin: 0;
   padding: 0;
   background-color: red; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1100px) {
     .dropdown {
       display: block; } }
   .dropdown__item {
@@ -905,7 +906,7 @@ p {
     @media (min-width: 900px) {
       .hero--exchange {
         height: 300px; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .hero--exchange {
         height: 450px; } }
   .hero__caption {
@@ -923,7 +924,7 @@ p {
     @media (min-width: 900px) {
       .hero__caption {
         font-size: 2.7rem; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .hero__caption {
         font-size: 3rem; } }
   .hero__list {
@@ -937,7 +938,7 @@ p {
     @media (min-width: 900px) {
       .hero__list {
         padding-top: 50px; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .hero__list {
         padding-top: 20px; } }
     .hero__list li {
@@ -1004,7 +1005,7 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 10;
     display: none;
     width: 100%;
     height: 100vh;
@@ -1025,12 +1026,12 @@ p {
     display: table;
     width: 100%;
     clear: both; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1100px) {
     .section--about {
       width: 50%;
       padding-right: 20px;
       float: left; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1100px) {
     .section--contacts {
       width: 50%;
       padding-left: 20px;
@@ -1052,7 +1053,7 @@ p {
     @media (min-width: 900px) {
       .section__title {
         font-size: 2rem; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .section__title {
         font-size: 2.25rem; } }
   .section__subtitle {
@@ -1231,7 +1232,7 @@ p {
   @media (min-width: 900px) {
     .form {
       margin: 0 100px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1100px) {
     .form {
       margin: 0 200px; } }
   .form__text-input {
@@ -1449,7 +1450,7 @@ p {
     display: none;
     vertical-align: top;
     padding-top: 35px; }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .page-footer__vk-widget {
         display: inline-block; } }
 
@@ -1459,7 +1460,7 @@ p {
   width: 100%;
   clear: both; }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .logo-n-contacts {
     display: inline-block;
     width: 400px; } }
@@ -1470,7 +1471,7 @@ p {
     .footer-banks {
       display: block;
       padding-top: 20px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1100px) {
     .footer-banks {
       display: inline-block;
       vertical-align: top;
@@ -1483,7 +1484,7 @@ p {
     vertical-align: top;
     padding-top: 10px;
     color: #ffffff; }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .footer-banks__caption {
         display: block;
         padding-bottom: 40px;
@@ -1495,7 +1496,7 @@ p {
     vertical-align: middle;
     padding-left: 20px;
     width: 130px; }
-    @media (min-width: 1200px) {
+    @media (min-width: 1100px) {
       .footer-banks__bank-image {
         width: 150px;
         padding-left: 0px;
