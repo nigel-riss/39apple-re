@@ -14,15 +14,46 @@
         // typography
         font-size: 2rem;
         font-weight: 300;
+    }
 
-        span {
-            // typography
-            font-weight: 400;
-            font-size: 0.8em;
+    &__count {
+        // typography
+        font-weight: 400;
+        font-size: 0.8em;
 
-            // visual
-            opacity: 0.54;
-        }
+        // visual
+        opacity: 0.54;
+    }
+
+    &__recency {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px 13px;
+        margin-left: 0.5em;
+
+        // typography
+        color: #ffffff;
+        font-size: 1rem;
+
+        // visual
+        background-color: $recencyColor;
+        border-radius: 1rem;
+    }
+
+    &__promo {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px 13px;
+
+        // typography
+        color: #ffffff;
+        font-size: 1rem;
+
+        // visual
+        background-color: $accent;
+        border-radius: 1rem;
     }
 
     ul {
