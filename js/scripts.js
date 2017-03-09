@@ -44,7 +44,7 @@ $(document).ready(function(){
             '-ms-transform': 'translateX(' + left + 'px)',
             '-o-transform': 'translateX(' + left + 'px)',
             'transform': 'translateX(' + left + 'px)',
-            'z-index': '9999'
+            'z-index': '999'
         }).addClass('dropdown--show');
     }
 

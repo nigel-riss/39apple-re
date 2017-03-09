@@ -1,4 +1,8 @@
 .contact {
+    // positioning
+    position: relative;
+    // z-index: 99999;
+
     // box model
     display: none;
     padding-left: 5px;
@@ -64,9 +68,17 @@
             text-align: justify;
             // border: 1px solid red;
         }
+
+        a {
+            // typography
+            color: #ffffff;
+        }
     }
 
     &__icon {
+        // positioning
+        position: relative;
+
         // box model
         display: inline-block;
         height: 36px;
@@ -160,5 +172,21 @@
                 background-color: #ffffff;
             }
         }
+    }
+
+    &__map {
+        // positioning
+        position: absolute;
+        // position: fixed;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // z-index: 9999;
+
+        // box model
+        height: 300px;
+        width: 300px;
+
+        // visual
+        background-color: red;
     }
 }

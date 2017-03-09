@@ -519,6 +519,7 @@ p {
       margin-top: 0px; } }
 
 .contact {
+  position: relative;
   display: none;
   padding-left: 5px;
   padding-bottom: 10px;
@@ -557,7 +558,10 @@ p {
         font-size: 1rem; } }
     .contact__info--call {
       text-align: justify; }
+    .contact__info a {
+      color: #ffffff; }
   .contact__icon {
+    position: relative;
     display: inline-block;
     height: 36px;
     width: 36px; }
@@ -603,6 +607,11 @@ p {
     .contact__phone a:hover {
       color: #04b004;
       background-color: #ffffff; }
+  .contact__map {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: red; }
 
 .main-nav {
   position: relative;
@@ -724,7 +733,7 @@ p {
 
 .fast-nav {
   position: relative;
-  z-index: 999;
+  z-index: 0;
   padding: 15px 0;
   background-color: #04b004;
   background-image: linear-gradient(to right, #144258, #024c45); }
@@ -1348,10 +1357,27 @@ p {
     padding-bottom: 10px;
     font-size: 2rem;
     font-weight: 300; }
-    .catalog-nav__caption span {
-      font-weight: 400;
-      font-size: 0.8em;
-      opacity: 0.54; }
+  .catalog-nav__count {
+    font-weight: 400;
+    font-size: 0.8em;
+    opacity: 0.54; }
+  .catalog-nav__recency {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 13px;
+    margin-left: 0.5em;
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #3e4c4b;
+    border-radius: 1rem; }
+  .catalog-nav__promo {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 13px;
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #ff5722;
+    border-radius: 1rem; }
   .catalog-nav ul {
     margin: 0;
     padding: 0;
