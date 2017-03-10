@@ -1,7 +1,7 @@
 .contact {
     // positioning
     position: relative;
-    // z-index: 99999;
+    z-index: 3;
 
     // box model
     display: none;
@@ -36,6 +36,10 @@
     &--loc {
         // box model
         display: inline-block;
+
+        &:hover .contact__map{
+            display: block;
+        }
     }
 
     &--last {
@@ -175,19 +179,43 @@
     }
 
     &__map {
-        // positioning
-        position: absolute;
-        // position: fixed;
-        // left: 50%;
-        // transform: translateX(-50%);
-        // z-index: 9999;
-
         // box model
-        display:  none;
-        height: 300px;
-        width: 300px;
+        display: none;
 
-        // visual
-        background-color: red;
+        @include atDesktop {
+            // positioning
+            position: absolute;
+            bottom: -310px;
+            left: -103px;
+            // transform: translateX(-45%);
+
+            // box model
+            // display: block;
+            height: 300px;
+            width: 300px;
+
+            // visual
+            background-color: #ffffff;
+            border-radius: 3px;
+            box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.54);
+
+            &::before {
+                content: "";
+
+                // positioning
+                position: absolute;
+                left: 50%;
+                top: -10px;
+                transform: translateX(-50%) rotate(45deg);
+                // z-index: -1;
+
+                // box model
+                height: 20px;
+                width: 20px;
+
+                // visual
+                background-color: #ffffff;
+            }
+        }
     }
 }
