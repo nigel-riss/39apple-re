@@ -1,56 +1,98 @@
 .dropdown {
     // positioning
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
 
     // box model
     display: none;
-    // height: 100%;
-    width: 100%;
     margin: 0;
-    padding: 0;
-    background-color: red;
+    padding: 20px 0 15px;
+
+    // typography
+    font-size: 0;
+
+    // visual
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.54);
+    list-style: none;
 
     @include atDesktop {
         // box model
         display: block;
+        
+        // visual
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.35s ease-out;
+
+        &:hover {
+            // positioning
+            top: 130px;
+
+            // visual
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    
+    &:before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        left: 50%;
+        top: -5px;
+        transform: translateX(-10px) rotate(45deg);
+        // left: calc(50% - 10px);
+
+        // box model
+        height: 20px;
+        width: 20px;
+        
+        // visual
+        background-color: #fff;
+    }
+
+    li {
+        // box model
+        margin: 0;
+        padding: 0;
+
+        a {
+            // box model
+            display: block;
+            padding: 5px 20px;
+
+            // typography
+            color: $copyColor;
+            line-height: 1.4;
+            font-weight: 400;
+            font-size: 0.875rem;
+            text-align: left;
+            white-space: nowrap;
+
+            // visual
+            border-radius: 0;
+
+            &:hover {
+                // typography
+                color: #fff;
+                
+                // visual
+                background-color: $lightGreen;
+                background-color: $mainGreen;
+            }
+        }
     }
 
     &__item {
-        // positioning
-        position: absolute;
-        top: 130px;
-        
-        // box model
-        display: block;
-        padding: 20px;
-
         // visual
-        background-color: #fff;
-        border-radius: 3px;
         box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.54);
         visibility: hidden;
-
-        &:before {
-            content: "";
-
-            // positioning
-            position: absolute;
-            z-index: 20;
-            transform: rotate(45deg);
-            left: 50%;
-            left: calc(50% - 10px);
-            top: -5px;
-
-            // box model
-            // border: 1px solid red;
-            height: 20px;
-            width: 20px;
-            
-            // visual
-            background-color: #fff;
-        }
 
         &--show {
             visibility: visible;
@@ -63,21 +105,6 @@
 
             // visual
             list-style: none;
-        }
-
-        li {
-            // 
-        }
-
-        a {
-            // typography
-            color: $mainGreen;
-            font-weight: 400;
-
-            &:hover {
-                // typography
-                text-decoration: underline;
-            }
         }
     }
 }
