@@ -4,8 +4,7 @@
     z-index: 2;
     
     // box model
-    padding: 15px 0;
-    // border: 1px solid red;
+    padding: 10px 0;
     
     // visual
     background-color: $mainGreen;
@@ -72,7 +71,7 @@
 
             & + .fast-nav__dropdown {
                 // positioning
-                top: 130px;
+                top: 115px;
 
                 // visual
                 visibility: visible;
@@ -96,8 +95,8 @@
 
         @include atDesktop{
             // box model
-            height: 64px;
-            width: 64px;
+            height: 56px;
+            width: 56px;
         }
     }
 
@@ -121,7 +120,7 @@
 
         @include atDesktop {
             // typography
-            font-size: 1rem;
+            font-size: 0.875rem;
         }
     }
 }
