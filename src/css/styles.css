@@ -458,24 +458,15 @@ p {
   @media (min-width: 900px) {
     .page-header {
       background-image: linear-gradient(to right, #04b004, #2ecc71); } }
-  .page-header__canvas {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    width: 100%;
-    height: 100%; }
 
 .logo {
   padding: 20px 10px;
-  width: 210px; }
+  width: 225px; }
   @media (min-width: 700px) {
     .logo {
-      padding: 25px 0;
+      padding: 20px 0;
       padding-bottom: 10px;
-      width: 310px;
+      width: 337px;
       margin: 0 auto; } }
   @media (min-width: 900px) {
     .logo {
@@ -484,7 +475,9 @@ p {
       width: 210px; } }
   @media (min-width: 1100px) {
     .logo {
-      width: 230px; } }
+      padding: 15px 0;
+      padding-bottom: 3px;
+      width: 225px; } }
   .logo img {
     display: block;
     width: 100%; }
@@ -514,9 +507,7 @@ p {
   display: block; }
   @media (min-width: 1100px) {
     .contacts--footer {
-      float: left;
-      margin-left: -30px;
-      margin-top: 0px; } }
+      float: left; } }
 
 .contact {
   position: relative;
@@ -537,13 +528,16 @@ p {
   @media (min-width: 1100px) {
     .contact {
       padding-left: 30px;
-      padding-right: 0; } }
+      padding-right: 0;
+      padding-top: 22px; } }
   .contact--phones {
     display: inline-block; }
   .contact--loc {
     display: inline-block; }
     .contact--loc:hover .contact__map {
-      display: block; }
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1); }
   .contact--last {
     padding-right: 0; }
   .contact__info {
@@ -558,7 +552,8 @@ p {
         font-size: 0.75rem; } }
     @media (min-width: 1100px) {
       .contact__info {
-        font-size: 1rem; } }
+        font-size: 0.875rem;
+        font-weight: 400; } }
     .contact__info--call {
       text-align: justify; }
     .contact__info a {
@@ -617,11 +612,17 @@ p {
         position: absolute;
         bottom: -310px;
         left: -103px;
+        display: block;
         height: 300px;
         width: 300px;
         background-color: #ffffff;
         border-radius: 3px;
-        box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.54); }
+        box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.54);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.25s ease-out;
+        transform: scale(0.1);
+        transform-origin: center top; }
         .contact__map::before {
           content: "";
           position: absolute;
@@ -642,7 +643,8 @@ p {
       padding: 10px 0; } }
   @media (min-width: 900px) {
     .main-nav {
-      float: left; }
+      float: left;
+      padding: 5px 0; }
       .main-nav:after {
         content: "";
         display: table;
@@ -682,8 +684,7 @@ p {
     @media (min-width: 1100px) {
       .main-nav a {
         padding: 6px 15px;
-        padding-top: 4px;
-        font-size: 1.5rem; } }
+        padding-top: 4px; } }
     .main-nav a:hover {
       color: #04b004;
       background-color: #fff; }
@@ -709,7 +710,8 @@ p {
   @media (min-width: 900px) {
     .search-form {
       float: right;
-      margin-top: 10px; } }
+      margin-top: 0;
+      margin-bottom: 10px; } }
   .search-form__input {
     height: 36px;
     padding-left: 20px;
@@ -753,7 +755,7 @@ p {
 .fast-nav {
   position: relative;
   z-index: 2;
-  padding: 15px 0;
+  padding: 10px 0;
   background-color: #04b004;
   background-image: linear-gradient(to right, #144258, #024c45); }
   .fast-nav__list {
@@ -789,7 +791,7 @@ p {
     .fast-nav a:hover {
       border: 1px solid rgba(255, 255, 255, 0.5); }
       .fast-nav a:hover + .fast-nav__dropdown {
-        top: 130px;
+        top: 115px;
         visibility: visible;
         opacity: 1; }
   .fast-nav img {
@@ -803,8 +805,8 @@ p {
         width: 48px; } }
     @media (min-width: 1100px) {
       .fast-nav img {
-        height: 64px;
-        width: 64px; } }
+        height: 56px;
+        width: 56px; } }
   .fast-nav__text {
     display: none;
     padding-top: 10px; }
@@ -817,11 +819,11 @@ p {
         font-size: 0.8rem; } }
     @media (min-width: 1100px) {
       .fast-nav__text {
-        font-size: 1rem; } }
+        font-size: 0.875rem; } }
 
 .dropdown {
   position: absolute;
-  top: 110px;
+  top: 95px;
   left: 50%;
   transform: translateX(-50%);
   display: none;
@@ -839,7 +841,7 @@ p {
       opacity: 0;
       transition: all 0.35s ease-out; }
       .dropdown:hover {
-        top: 130px;
+        top: 115px;
         visibility: visible;
         opacity: 1; } }
   .dropdown:before {

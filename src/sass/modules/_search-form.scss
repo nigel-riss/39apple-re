@@ -7,7 +7,6 @@
     // border: 1px solid red;
 
     @include atTabletsPortrait {
-        // box model
         
         // typography
         text-align: center;
@@ -15,8 +14,10 @@
 
     @include atTabletsLandscape {
         // box model
+        // margin-bottom: 10px;
         float: right;
-        margin-top: 10px;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
 
     &__input {

@@ -1,13 +1,13 @@
 .logo {
     // box model
     padding: 20px 10px;
-    width: 210px;
+    width: 225px;
 
     @include atTabletsPortrait {
         // box model
-        padding: 25px 0;
+        padding: 20px 0;
         padding-bottom: 10px;
-        width: 310px;
+        width: 337px;
         margin: 0 auto;
     }
 
@@ -20,7 +20,9 @@
 
     @include atDesktop {
         // box model
-        width: 230px;
+        padding: 15px 0;
+        padding-bottom: 3px;
+        width: 225px;
     }
 
     img {

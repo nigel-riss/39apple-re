@@ -1,9 +1,4 @@
 .contacts {
-    // @include atSmall {
-    //     // box model
-    //     display: none;
-    // }
-
     @include atTabletsPortrait {
         // box model
         display: block;
@@ -26,8 +21,8 @@
 
         @include atDesktop {
             float: left;
-            margin-left: -30px;
-            margin-top: 0px;
+            // margin-left: -30px;
+            // margin-top: 0px;
         }
     }
 }

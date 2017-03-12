@@ -26,6 +26,7 @@
         // box model
         padding-left: 30px;
         padding-right: 0;
+        padding-top: 22px;
     }
 
     &--phones {
@@ -38,7 +39,9 @@
         display: inline-block;
 
         &:hover .contact__map{
-            display: block;
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
         }
     }
 
@@ -65,12 +68,12 @@
 
         @include atDesktop {
             // typography
-            font-size: 1rem;
+            font-size: 0.875rem;
+            font-weight: 400;
         }
 
         &--call {
             text-align: justify;
-            // border: 1px solid red;
         }
 
         a {
@@ -187,10 +190,9 @@
             position: absolute;
             bottom: -310px;
             left: -103px;
-            // transform: translateX(-45%);
 
             // box model
-            // display: block;
+            display: block;
             height: 300px;
             width: 300px;
 
@@ -198,6 +200,11 @@
             background-color: #ffffff;
             border-radius: 3px;
             box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.54);
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.25s ease-out;
+            transform: scale(0.1);
+            transform-origin: center top;
 
             &::before {
                 content: "";
