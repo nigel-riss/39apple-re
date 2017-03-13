@@ -1,7 +1,11 @@
 .hero {
     // box model
-    // height: 450px;
     margin-top: 20px;
+
+    @include atDesktop {
+        // box model
+        margin-top: 15px;
+    }
 
     img {
         // box model
