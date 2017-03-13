@@ -4,6 +4,8 @@
     @include atDesktop {
         // box model
         display: inline-block;
-        width: 400px;
+        vertical-align: top;
+        padding-top: 15px;
+        width: 300px;
     }
 }

@@ -11,6 +11,9 @@
     margin-bottom: 40px;
     padding-bottom: 50px;
 
+    // typography
+    font-size: 0;
+
     // visual
     box-shadow: 0 0 5px 0 rgba(20, 66, 88, 0.2);
     border: 1px solid rgba(20, 66, 88, 0.2);
@@ -23,6 +26,81 @@
         margin-left: 0;
     }
 
+    &--small {
+        @include atTabletsLandscape {
+            // box model
+            height: 120px;
+            padding: 10px;
+            margin-bottom: 20px;
+            // border: 1px solid red;
+
+            .shop-item__image {
+                // box model
+                display: inline-block;
+                vertical-align: top;
+                width: 100px;
+                height: 100px;
+                // border: 1px solid red;
+            }
+
+            .shop-item__title {
+                // box model
+                padding-top: 0;
+                display: inline-block;
+                vertical-align: top;
+                width: 128px;
+
+                // typography
+                font-size: 0.875rem;
+            }
+
+            .shop-item__recency {
+                // box model
+                display: none;
+            }
+
+            .shop-item__price {
+                // box model
+                padding: 0 15px;
+                width: 120px;
+
+                // positioning
+                left: auto;
+                right: 0;
+                bottom: 10px;
+
+                // typography
+                font-size: 0.875rem;
+
+                // visual
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-top-left-radius: 16px;
+                border-bottom-left-radius: 16px;
+            }
+
+            .shop-item__promo {
+                // positioning
+                right: auto;
+                top: auto;
+                bottom: 10px;
+                left: 10px;
+
+                // box model
+                padding: 3px 15px;
+                padding-bottom: 5px;
+                height: auto;
+                width: auto;
+
+                // typography
+                font-size: 0.875rem;
+
+                // visual
+                border-radius: 16px;
+            }
+        }
+    }
+
     &:hover {
         box-shadow: 0 0 12px 0 rgba(20, 66, 88, 0.4);
         border: 1px solid rgba(20, 66, 88, 0.4);
@@ -33,9 +111,6 @@
         display: block;
         height: 210px;
         width: 100%;
-
-
-        // border: 1px solid red;
 
         img {
             // box model
@@ -62,7 +137,6 @@
         // positioning
         position: absolute;
         left: 0;
-        // top: 200px;
         bottom: 15px;
 
         // box model

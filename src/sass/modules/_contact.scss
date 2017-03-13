@@ -23,6 +23,9 @@
     }
 
     @include atDesktop {
+        // positioning
+        z-index: 12;
+
         // box model
         padding-left: 30px;
         padding-right: 0;
@@ -189,12 +192,12 @@
             // positioning
             position: absolute;
             bottom: -310px;
-            left: -103px;
+            left: -88px;
 
             // box model
             display: block;
-            height: 300px;
-            width: 300px;
+            height: 297px;
+            width: 270px;
 
             // visual
             background-color: #ffffff;
@@ -222,6 +225,14 @@
 
                 // visual
                 background-color: #ffffff;
+            }
+
+            img {
+                // positioning
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 1;
             }
         }
     }
