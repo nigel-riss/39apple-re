@@ -6,7 +6,7 @@
         font-size: 0;
 
         @include atTabletsLandscape {
-            width: 400px;
+            width: 350px;
             float: left;
         }
     }
@@ -24,7 +24,7 @@
 
         @include atTabletsLandscape {
             // box model
-            width: 400px;
+            width: 350px;
             margin-bottom: 15px;
             float: clear;
         }
@@ -50,13 +50,14 @@
 
         @include atTabletsLandscape {
             // box model
-            width: 125px;
+            width: 110px;
             height: 100px;
-            margin-right: 12px;
+            margin-right: 10px;
 
             &:nth-of-type(4n) {
                 // box model
                 margin-right: 0;
+                // border: 1px solid red;
             }
         }
 
@@ -81,7 +82,7 @@
     &__description {
         @include atTabletsLandscape {
             // box model
-            width: calc(100% - 401px);
+            width: calc(100% - 351px);
             float: right;
             padding-left: 20px;
             margin-top: -15px;
@@ -95,7 +96,7 @@
 
         p {
             // typography
-            font-size: 1rem;
+            font-size: 0.875rem;
             line-height: 1.5;
         }
 
