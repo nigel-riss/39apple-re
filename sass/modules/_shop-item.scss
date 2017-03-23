@@ -123,7 +123,7 @@
 
     &__title {
         // box model
-        padding-top: 15px;
+        padding-top: 18px;
         padding-bottom: 10px;
         height: 60px;
 
@@ -186,6 +186,7 @@
         position: absolute;
         right: 10px;
         top: 110px;
+        z-index: 2;
 
         // box model
         height: 56px;
@@ -201,5 +202,36 @@
         // visual
         background-color: $accent;
         border-radius: 50%;
+    }
+
+    &__palette {
+        // positioning
+        position: absolute;
+        top: 155px;
+        left: 0;
+
+        // box model
+        width: 100%;
+        // border: 1px solid red;
+
+        // typography
+        text-align: center;
+    }
+
+    &__color {
+        // box model
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        margin: 3px;
+        // border: 1px solid red;
+
+        // visual
+        border-radius: 50%;
+
+        &:hover {
+            // visual
+            border: 1px solid $secondaryGreen;
+        }
     }
 }
