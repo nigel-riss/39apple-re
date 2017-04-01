@@ -1,8 +1,10 @@
 .page-footer {
     // positioning
-    position: relative;
+    position: absolute;
+    bottom: 0;
 
     // box model
+    width: 100%;
     padding-bottom: 25px;
 
     // visual
@@ -25,8 +27,13 @@
             // box model
             display: inline-block;
             vertical-align: top;
-            padding-top: 33px;
+            padding-top: 31px;
             margin-left: -10px;
+
+            img {
+                // visual
+                border: 1px solid #ffffff;
+            }
         }
     }
 

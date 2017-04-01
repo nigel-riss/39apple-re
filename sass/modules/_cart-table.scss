@@ -1,0 +1,69 @@
+.cart-table {
+    // box model
+    width: 100%;
+    margin-bottom: 40px;
+
+    // visual
+    border-collapse: collapse;
+    // border: 1px solid #e9e9e9;
+
+    th {
+        // box model
+        padding: 5px;
+
+        // typography
+        color: #ffffff;
+        font-size: 0.825rem;
+        font-weight: 500;
+        text-align: left;
+
+        // visual
+        // border: 1px solid red;
+        background-color: $mainGreen;
+        border-bottom: 2px solid $mainGreen;
+
+        @include atTabletsPortrait {
+            // box model
+            padding: 10px;
+
+            // typography
+            font-size: 1rem;
+        }
+    }
+
+    td {
+        // box model
+        padding: 5px;
+
+        // typography
+        font-size: 0.825rem;
+
+        // visual
+        border-bottom: 1px solid #e9e9e9;
+
+        @include atTabletsPortrait {
+            // box model
+            padding: 10px;
+
+            // typography
+            font-size: 1rem;
+        }
+    }
+
+    &__image {
+        // box model
+        display:none;
+
+        @include atTabletsPortrait {
+            // box model
+            display: block;
+            height: 80px;
+            width: 80px;
+
+            img {
+                // box model
+                width: 100%;
+            }
+        }
+    }
+}

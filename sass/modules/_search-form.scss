@@ -7,7 +7,6 @@
     // border: 1px solid red;
 
     @include atTabletsPortrait {
-        
         // typography
         text-align: center;
     }
@@ -53,7 +52,7 @@
 
             @include atDesktop {
                 // box model
-                width: 400px;
+                width: 340px;
             }
 
             & + .search-form__button {

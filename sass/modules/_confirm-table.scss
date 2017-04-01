@@ -1,0 +1,44 @@
+.confirm-table {
+    // box model
+    margin-bottom: 2em;
+    
+    // visual
+    border-collapse: collapse;
+
+    th, td {
+        // box model
+        padding: 5px;
+
+        // typography
+        font-size: 0.825rem;
+
+        // visual
+        border: 1px solid #ccc;
+
+        @include atTabletsPortrait {
+            // box model
+            padding: 10px;
+
+            // typography
+            font-size: 1rem;
+        }
+    }
+
+    th:first-child,
+    td:first-child {
+        // box model
+        // padding-left: 0;
+
+        // typography
+        text-align: left;
+    }
+
+    th:last-child,
+    td:last-child {
+        // box model
+        // padding-right: 0;
+
+        // typography
+        text-align: right;
+    }
+}

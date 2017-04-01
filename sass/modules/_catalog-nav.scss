@@ -31,6 +31,7 @@
         vertical-align: top;
         padding: 5px 13px;
         margin-left: 0.5em;
+        margin-top: 0.25em;
 
         // typography
         color: #ffffff;
@@ -46,6 +47,7 @@
         display: inline-block;
         vertical-align: top;
         padding: 5px 13px;
+        margin-top: 0.25em;
 
         // typography
         color: #ffffff;
@@ -84,5 +86,11 @@
         &:last-of-type:after {
             content: "";
         }
+    }
+
+    p {
+        // box model
+        margin: 0;
+        padding: 0;
     }
 }
