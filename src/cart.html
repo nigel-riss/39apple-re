@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="import" href="header.html">
+    <link rel="import" href="footer.html">
+</head>
+
+<body>
+    <!--
+        Page header
+    -->
+    <script>
+        var headerLink = document.querySelector('link[rel="import"][href="header.html"]');
+        var headerContent = headerLink.import;
+        var headerElement = headerContent.querySelector('.page-header');
+        document.body.appendChild(headerElement.cloneNode(true));
+    </script>
+
+    <!--
+        Main
+    -->
+    <main>
+        <nav class="catalog-nav">
+            <div class="container">
+                <h2 class="catalog-nav__caption">
+                    Корзина <span class="catalog-nav__count">(3)</span>
+                </h2>
+            </div>
+        </nav>
+        <div class="container">
+            <section class="section">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Описание</th>
+                            <th>Количество</th>
+                            <th>Стоимость</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="cart-table__image">
+                                    <img src="./img/item-imgs/item1.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>Apple iPhone 4s 16Gb RFB</td>
+                            <td>
+                                <div class="quantity">
+                                    <input type="button" value="-" class="quantity__minus">
+                                    <input class="quantity__text" type="number" step="1" min="0" max="3" value="1">
+                                    <input type="button" value="+" class="quantity__plus">
+                                </div>
+                            </td>
+                            <td>10 990 руб.</td>
+                            <td>
+                                <a href="">удалить</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="cart-table__image">
+                                    <img src="./img/item-imgs/item2.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>Apple iPhone 5 16Gb RFB</td>
+                            <td>
+                                <div class="quantity">
+                                    <input type="button" value="-" class="quantity__minus">
+                                    <input class="quantity__text" type="number" step="1" min="0" max="3" value="1">
+                                    <input type="button" value="+" class="quantity__plus">
+                                </div>
+                            </td>
+                            <td>14 990 руб.</td>
+                            <td>
+                                <a href="">удалить</a>
+                            </td>
+
+                        <tr>
+                            <td>
+                                <div class="cart-table__image">
+                                    <img src="./img/item-imgs/item3.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>Иговая консоль PlayStation 4 Pro 1Tb</td>
+                            <td>
+                                <div class="quantity">
+                                    <input type="button" value="-" class="quantity__minus">
+                                    <input class="quantity__text" type="number" step="1" min="0" max="3" value="1">
+                                    <input type="button" value="+" class="quantity__plus">
+                                </div>
+                            </td>
+                            <td>28 500 руб.</td>
+                            <td>
+                                <a href="">удалить</a>
+                            </td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <strong>Итого</strong>
+                            </td>
+                            <td>54 480 руб.</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <a href="purchase.html" class="button button--fr">Оформить покупку</a>
+            </section>
+
+            <section class="section section--random">
+                <header class="section__header">
+                    <h2 class="section__title">Случайные товары</h2>
+                    <p class="section__subtitle">товары, которые могут вам понравиться</p>
+                </header>
+
+                <div class="catalog-items  catalog-items--sb">
+                    <a href="#">
+                        <div class="shop-item">
+                            <div class="shop-item__image">
+                                <img src="./img/item-imgs/item1.jpg" alt="">
+                            </div>
+                            <div class="shop-item__title">Apple iPhone 4s 16Gb RFB</div>
+                            <div class="shop-item__price">10 990 руб.</div>
+                            <div class="shop-item__recency">б/y</div>
+                            <div class="shop-item__colors"></div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="shop-item">
+                            <div class="shop-item__image">
+                                <img src="./img/item-imgs/item2.jpg" alt="">
+                            </div>
+                            <div class="shop-item__title">Apple iPhone 5 16Gb RFB</div>
+                            <div class="shop-item__price">14 990 руб.</div>
+                            <div class="shop-item__recency">б/у</div>
+                            <div class="shop-item__promo">акция</div>
+                            <div class="shop-item__colors"></div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="shop-item">
+                            <div class="shop-item__image">
+                                <img src="./img/item-imgs/item3.jpg" alt="">
+                            </div>
+                            <div class="shop-item__title">Иговая консоль PlayStation 4 Pro 1Tb</div>
+                            <div class="shop-item__price">Под заказ</div>
+                            <div class="shop-item__recency">новый</div>
+                            <div class="shop-item__colors"></div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="shop-item">
+                            <div class="shop-item__image">
+                                <img src="./img/item-imgs/item4.jpg" alt="">
+                            </div>
+                            <div class="shop-item__title">Apple Watch 42mm</div>
+                            <div class="shop-item__price">58 990 руб.</div>
+                            <div class="shop-item__recency">новый</div>
+                            <div class="shop-item__colors"></div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="shop-item">
+                            <div class="shop-item__image">
+                                <img src="./img/item-imgs/item2.jpg" alt="">
+                            </div>
+                            <div class="shop-item__title">Apple iPhone 5 16Gb RFB</div>
+                            <div class="shop-item__price">14 990 руб.</div>
+                            <div class="shop-item__recency">б/у</div>
+                            <div class="shop-item__promo">акция</div>
+                            <div class="shop-item__colors"></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--
+        Footer
+    -->
+    <script>
+        var footerLink = document.querySelector('link[rel="import"][href="footer.html"]');
+        var footerContent = footerLink.import;
+        var footerElement = footerContent.querySelector('.page-footer');
+        document.body.appendChild(footerElement.cloneNode(true));
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+
+</html>

@@ -57,4 +57,10 @@
         margin: 0 auto;
         margin-top: 40px;
     }
+
+    &--fr {
+        // box model
+        display: block;
+        float: right;
+    }
 }

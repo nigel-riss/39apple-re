@@ -1,0 +1,10 @@
+.quantity {
+    // box model
+    width: 100px;
+    // border: 1px solid red;
+
+    &__text {
+        // box model
+        width: 30px;
+    }
+}

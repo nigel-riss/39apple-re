@@ -1,0 +1,73 @@
+.repair-nav {
+    &__list {
+        // box model
+        margin: 0;
+        padding: 0;
+        margin-bottom: -30px;
+        // border: 1px solid red;
+
+        // typography
+        text-align: center;
+
+        // visual
+        list-style: none;
+    }
+
+    &__item {
+        // box model
+        display: inline-block;
+        margin-bottom: 10px;
+
+        &--current {
+            span {
+                // typography
+                color: #ffffff !important;
+
+                // visual
+                background-color: $mainGreen;
+                border: 1px solid $mainGreen !important;
+                
+                svg path {
+                    // visual
+                    fill: #ffffff;
+                }
+            }
+        }
+    }
+
+    &__link {
+        // box model
+        display: block;
+        padding: 10px;
+
+        // typography
+        color: $copyColor;
+
+        // visual
+        border: 1px solid rgba($copyColor, 0.54);
+        // border: 1px solid transparent;
+        border-radius: 5px;
+
+        svg {
+            // box model
+            display: inline-block;
+            vertical-align: middle;
+            height: 32px;
+            margin-right: 5px;
+        }
+
+    }
+    
+    a:hover {
+        // typography
+        color: $mainGreen;
+        text-decoration: none;
+
+        // visual
+        border: 1px solid $mainGreen;
+
+        svg path {
+            fill: $mainGreen;
+        }
+    }
+}
