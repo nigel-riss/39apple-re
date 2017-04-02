@@ -143,4 +143,25 @@
         background-color: $mainGreen;
         border-radius: 19px;
     }
+
+    &__palette {
+        // typography
+        font-size: 0;
+    }
+
+    &__color {
+        // box model
+        display: inline-block;
+        // height: 20px;
+        padding: 5px 15px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+
+        // typography
+        color: #ffffff;
+        font-size: 0.875rem;
+
+        // visual
+        border-radius: 15px;
+    }
 }
