@@ -1,5 +1,6 @@
 .button {
     // box model
+    display: inline-block;
     padding: 13px 30px;
     padding-top: 12px;
     padding-bottom: 14px;
@@ -49,6 +50,14 @@
         // visual
         border: 2px solid $accent;
         background-color: #ffffff;
+    }
+
+    &--small {
+        // box model
+        margin-left: 10px;
+        padding: 20px;
+        padding-top: 7px;
+        padding-bottom: 9px;
     }
 
     &--blocked {
