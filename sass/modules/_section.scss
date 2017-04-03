@@ -32,6 +32,28 @@
         }
     }
 
+    &--featured-at-items {
+        // typography
+        text-align: center;
+
+        @include atTabletsLandscape {
+            // box model
+            display: none;
+        }
+
+        @include atDesktop {
+            // box model
+            display: block;
+            width: 250px;
+            float: left;
+        }
+    }
+
+    &--random {
+        // typography
+        text-align: center;
+    }
+
     &--all-news {
         // box model
         padding-bottom: 0;

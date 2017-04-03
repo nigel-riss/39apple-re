@@ -21,7 +21,8 @@
         @include atTabletsPortrait {
             // visual
             background-image: url('../img/repair-bg.jpg');
-            background-size: contain;
+            background-size: 75%;
+            background-position: right top;
             background-repeat: no-repeat;
             // background-size: cover;
         }
@@ -34,19 +35,19 @@
         @include atTabletsPortrait {
             // visual
             background-image: url('../img/exchange-bg.jpg');
-            background-size: contain;
+            background-size: 75%;
             background-repeat: no-repeat;
             background-position: top right;
         }
 
         @include atTabletsLandscape {
             // box model
-            height: 300px;
+            // height: 200px;
         }
 
         @include atDesktop {
             // box model
-            height: 450px;
+            // height: 450px;
         }
     }
 
@@ -110,7 +111,7 @@
             // typography
             font-size: 1rem;
             font-weight: 300;
-            line-height: 1.5;
+            line-height: 1.4;
 
             @include atTabletsLandscape {
                 // typography

@@ -6,6 +6,9 @@
     display: none;
     padding-bottom: 10px;
 
+    // typography
+    text-align: left;
+
     @include atTabletsPortrait {
         // box model
         display: block;
@@ -14,9 +17,14 @@
 
     @include atTabletsLandscape{
         // box model
-        float: left;
-        @include clearfix;
-        padding: 5px 0;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0;
+        padding-right: 10px;
+    }
+
+    @include atDesktop {
+        // box model
     }
 
     & ul {
@@ -41,7 +49,7 @@
     & li {
         // box model
         display: block;
-        margin-bottom: 5px;
+        // margin-bottom: 5px;
 
         @include atTabletsPortrait {
             // box model

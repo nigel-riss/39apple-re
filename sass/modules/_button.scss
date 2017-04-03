@@ -5,7 +5,6 @@
     padding-top: 12px;
     padding-bottom: 14px;
     box-sizing: border-box;
-    // height: 50px;
 
     // typography
     color: $mainGreen;
@@ -30,7 +29,6 @@
         // opacity: 0.8;
         text-decoration: none;
         background-color: $mainGreen;
-        // border: none;
     }
 
     &:focus {
@@ -39,17 +37,12 @@
     }
 
     &:active {
-        // box model
-        padding: 11px 30px;
-        padding-top: 10px;
-        padding-bottom: 12px;
-        
         // typography
-        color: $accent;
+        color: #ffffff;
 
         // visual
-        border: 2px solid $accent;
-        background-color: #ffffff;
+        border: 1px solid rgba($mainGreen, 0.54);
+        background-color: rgba($mainGreen, 0.54);
     }
 
     &--small {
