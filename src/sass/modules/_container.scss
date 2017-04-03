@@ -29,4 +29,13 @@
         position: relative;
         z-index: 1;
     }
+
+    &--text-align-c {
+        // typography
+        text-align: center;
+
+        @include atTabletsLandscape {
+            text-align: left;
+        }
+    }
 }

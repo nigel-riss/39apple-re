@@ -3,20 +3,30 @@
     position: relative;
 
     // box model
+    margin: 0 auto;
     margin-bottom: 15px;
     // border: 1px solid red;
 
     @include atTabletsPortrait {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        width: 390px;
         // typography
         text-align: center;
     }
 
     @include atTabletsLandscape {
         // box model
-        // margin-bottom: 10px;
-        float: right;
+        width: 170px;
+        width: calc(100% - 680px);
         margin-top: 0;
         margin-bottom: 10px;
+    }
+
+    @include atDesktop {
+        // box model
+        width: 330px;
     }
 
     &__input {
@@ -34,29 +44,15 @@
 
         @include atTabletsPortrait {
             // box model
-            width: 520px;
+            width: 100%;
         }
 
         @include atTabletsLandscape {
             // box model
-            width: 300px;
             height: 35px;
 
             // typography
             text-align: center;
-        }
-
-        &:focus {
-            @include atTabletsPortrait {
-            }
-
-            @include atDesktop {
-                // box model
-                width: 340px;
-            }
-
-            & + .search-form__button {
-            }
         }
     }
 
@@ -69,6 +65,7 @@
         // box model
         height: 24px;
         width: 24px;
+        // border: 1px solid red;
 
         // typography
         font-size: 0;

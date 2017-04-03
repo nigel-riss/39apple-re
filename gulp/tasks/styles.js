@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sassModuleImporter = require('sass-module-importer'),
+    autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync');
 
 // sass tasks

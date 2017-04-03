@@ -153,15 +153,26 @@
         // box model
         display: inline-block;
         // height: 20px;
-        padding: 5px 15px;
+        padding: 10px;
         margin-right: 5px;
         margin-bottom: 5px;
 
         // typography
         color: #ffffff;
-        font-size: 0.875rem;
+        // font-size: 0.875rem;
 
         // visual
-        border-radius: 15px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+
+        &--main {
+            // box model
+            padding: 15px;
+        }
+
+        &:hover {
+            // visual
+            border: 1px solid rgba($mainGreen, 0.54);
+        }
     }
 }

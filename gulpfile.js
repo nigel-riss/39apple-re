@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sassModuleImporter = require('sass-module-importer'),
+    autoprefixer = require('gulp-autoprefixer'),
     watch = require('gulp-watch'),
     browserSync = require('browser-sync');
 
@@ -20,6 +21,10 @@ gulp.task('sass', function() {
             console.log(errorInfo.toString());
             this.emit('end');
         })
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest(cssPath))
 });
 
