@@ -13,7 +13,7 @@
 
     // typography
     color: #ffffff;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
 
     // visual
@@ -40,16 +40,10 @@
         // box model
         display: inline-block;
         vertical-align: middle;
-        height: 40px;
-        width: 40px;
+        height: 32px;
+        width: 32px;
         padding-top: 1px;
         margin-right: -5px;
-
-        @include atTabletsPortrait {
-            // box model
-            height: 32px;
-            width: 32px;
-        }
     }
 
     &__number {

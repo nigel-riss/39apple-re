@@ -2,6 +2,7 @@
     // box model
     padding: 20px 10px;
     width: 225px;
+    margin: 0 auto;
 
     @include atTabletsPortrait {
         // box model

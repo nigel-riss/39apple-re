@@ -27,6 +27,45 @@ body {
     @include atDesktop {
         // box model
         padding-bottom: 344px;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            // box model
+            width: 440px;
+            height: 100%;
+            // border: 1px solid red;
+            
+            // visual
+            background-image: url('../img/deco/deco-left.jpg');
+            background-repeat: repeat-y;
+        }
+
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+
+            // box model
+            width: 600px;
+            height: 100%;
+            // border: 1px solid red;
+            
+            // visual
+            background-image: url('../img/deco/deco-right.jpg');
+            background-position: right top;
+            background-repeat: repeat-y;
+        }
     }
 }
 
