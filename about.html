@@ -289,12 +289,67 @@
     <!--
         Footer
     -->
-    <script>
-        var footerLink = document.querySelector('link[rel="import"][href="footer.html"]');
-        var footerContent = footerLink.import;
-        var footerElement = footerContent.querySelector('.page-footer');
-        document.body.appendChild(footerElement.cloneNode(true));
-    </script>
+<footer class="page-footer">
+    <div class="container">
+        <div class="logo-n-contacts">
+            <a href="">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </a>
+            <div class="contacts  contacts--footer">
+                <div class="contact">
+                    <div class="contact__icon  contact__icon--loc"></div>
+                    <div class="contact__info">
+                        ул. Пролетарская, д.15 <br>300м от Дома Советов
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact__icon  contact__icon--time"></div>
+                    <div class="contact__info">
+                        Пн-Пт: 10:00-19:00 <br>Сб-Вс: 10:00-17:30
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact__icon  contact__icon--call"></div>
+                    <div class="contact__info  contact__info--call">
+                        Магазин: <span class="contact__phone"><a href="tel:84012900310">8 (4012) 900-310</a></span><br> Сервис:
+                        <span class="contact__phone  contact__phone--ml"><a href="tel:84012900300">8 (4012) 900-300</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer__banks footer-banks">
+            <div class="footer-banks__caption">Доступен кредит от:</div>
+            <div class="footer-banks__images">
+                <img class="footer-banks__bank-image" src="./img/bank-rus-fin.png" alt="Русфинанс Банк лого">
+                <img class="footer-banks__bank-image" src="./img/bank-otp.png" alt="ОТП Банк лого">
+                <img class="footer-banks__bank-image" src="./img/bank-home.png" alt="ХоумКредит Банк лого">
+                <img class="footer-banks__bank-image" src="./img/bank-alfa.png" alt="Альфа-Банк лого">
+                <img class="footer-banks__bank-image" src="./img/bank-post.png" alt="Почта Банк лого">
+            </div>
+        </div>
+
+        <div class="page-footer__map">
+            <a href="about.html#map"><img src="./img/mini-map.jpg" alt=""></a>
+        </div>
+
+        <div class="page-footer__social">
+            <a class="page-footer__inst" href="https://www.instagram.com/39apple/">
+            <span class="icon icon--inst"></span>
+            <span>&nbsp;Наш Instagram</span>
+            </a>
+            <div class="page-footer__vk-widget">
+                <!-- VK Widget -->
+                <div id="vk_groups"></div>
+            </div>
+        </div>
+
+        <a data-scroll="" data-options="{ &quot;easing&quot;: &quot;easeOutCubic&quot; }" href="#" class="up-button">🡑 наверх</a>
+    </div>
+</footer>
+<!-- Design and markup by Kurenkov Yuriy *** mr<dot>kurenkov<at>gmail<dot>com *** https://github.com/nigel-riss -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -303,6 +358,7 @@
     <script>
         smoothScroll.init();
     </script>
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
 </body>
 
 </html>
