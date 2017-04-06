@@ -38,7 +38,7 @@
 
         @include atTabletsLandscape {
             // box model
-            display: none;
+            // display: none;
         }
 
         @include atDesktop {
@@ -238,5 +238,10 @@
     &__image {
         // box model
         max-width: 100%;
+    }
+
+    p {
+        // typography
+        text-align: left;
     }
 }
