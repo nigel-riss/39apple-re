@@ -9,9 +9,16 @@
     padding: 10px 20px;
 
     // typography
+    text-align: center;
 
     // visual
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 2px 7px 0 rgba($copyColor, 0.54);
+
+    img {
+        // box model
+        width: 22px;
+        padding-right: 5px;
+    }
 }

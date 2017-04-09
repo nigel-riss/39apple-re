@@ -51,7 +51,8 @@
         // border: 1px solid red;
 
         // visual
-        background-image: linear-gradient(to bottom, transparent 0, #ffffff 80px);
+        background-image: linear-gradient(to bottom, transparent 0px, transparent 20px, #ffffff 80px);
+        background-repeat: no-repeat;
     }
 
     &__img-container {

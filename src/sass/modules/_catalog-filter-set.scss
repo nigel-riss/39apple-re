@@ -1,17 +1,9 @@
 .catalog-filter-set {
     // positioning
     position: relative;
-    
-    // box model
-    // border: 1px solid blue;
 
     // visual
     border-bottom: 1px solid #eeeeee;
-
-    &:hover {
-        // visual
-        // background-color: #ddeeff;
-    }
 
     &__title {
         // box model
@@ -20,8 +12,6 @@
 
         // typography
         font-weight: 400;
-        // border: 1px solid red;
-        // background-color: #f1f1f1;
         line-height: 1;
         
         @include atTabletsPortrait {
@@ -40,8 +30,6 @@
         width: 24px;
 
         // visual
-        // border: 1px solid #ccc;
-        // border-radius: 50%;
         opacity: 0.54;
 
         &:hover {

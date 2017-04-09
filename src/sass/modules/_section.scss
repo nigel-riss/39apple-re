@@ -30,6 +30,12 @@
             width: 250px;
             float: left;
         }
+
+        a {
+            // box model
+            display: inline-block;
+            vertical-align: top;
+        }
     }
 
     &--featured-at-items {
@@ -47,11 +53,23 @@
             width: 250px;
             float: left;
         }
+
+        a {
+            // box model
+            display: inline-block;
+            vertical-align: top;
+        }
     }
 
     &--random {
         // typography
         text-align: center;
+
+        a {
+            // box model
+            display: inline-block;
+            vertical-align: top;
+        }
     }
 
     &--all-news {
