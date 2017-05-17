@@ -1619,6 +1619,8 @@ p {
         color: #ffffff;
         text-decoration: none;
         background-color: #04b004; }
+    .catalog-filter-set__filters ul {
+      list-style: disc; }
 
 .catalog-sorting {
   margin: 0;
