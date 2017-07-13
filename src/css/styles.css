@@ -757,6 +757,8 @@ p {
     .main-nav a.current {
       color: #04b004;
       background-color: #ffffff; }
+    .main-nav a.special {
+      background-color: #ff5722; }
     @media (min-width: 700px) {
       .main-nav a {
         padding: 6px 12px;
