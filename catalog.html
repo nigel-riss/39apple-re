@@ -18,7 +18,10 @@
     <div class="container">
         <a href="index.html">
             <div class="logo">
-                <img src="img/logo.png" alt="">
+                <img src="img/logo.png" alt="39 яблок и смартфонов логотип">
+            </div>
+            <div class="logo--small">
+                <img src="img/logo-small.png" alt="39 яблок и смартфонов логотип">
             </div>
         </a>
         <div id="menu-button" class="menu-button">
@@ -110,7 +113,7 @@
     <!--
         Fast navigation for catalog
     -->
-    <nav class="fast-nav">
+     <nav class="fast-nav fast-nav--catalog">
         <div class="container container--relative-z-1">
             <ul id="fast-nav" class="fast-nav__list">
                 <li class="fast-nav__item fast-nav__item--has-dropdown" data-content="phones">
@@ -198,7 +201,7 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> 
 </header>
 
     <!--
@@ -207,14 +210,14 @@
     <main>
         <nav class="catalog-nav">
             <div class="container">
-                <h2 class="catalog-nav__caption">
+                <!-- <h2 class="catalog-nav__caption">
                     iPhone <span class="catalog-nav__count">(12)</span>
-                </h2>
+                </h2> -->
 
                 <ul>
                     <li><a href="#">Телефоны</a></li>
                     <li><a href="#">Apple</a></li>
-                    <li>iPhone</li>
+                    <li>iPhone (12)</li>
                 </ul>
             </div>
         </nav>
@@ -229,25 +232,68 @@
                     <div class="catalog-filter-set__toggle  catalog-filter-set__toggle--on"></div>
                     <ul class="catalog-filter-set__filters">
                         <li>
-                            <a href="">Телефоны</a>
+                            <a href="">
+                                <i class="icon-phones"></i>
+                                <span>Телефоны</span>
+                            </a>
                             <ul>
                                 <li><a href="">Apple</a></li>
                                 <li><a href="">Android</a></li>
                             </ul>
                         </li>
+
                         <li>
-                            <a href="">Планшеты</a>
+                            <a href="">
+                                <i class="icon-tablet"></i>
+                                <span>Планшеты</span>
+                            </a>
                             <ul>
                                 <li><a href="">Apple</a></li>
                                 <li><a href="">Android</a></li>
                             </ul>
                         </li>
-                        <li><a href="">Mac</a></li>
-                        <li><a href="">Носимая электроника</a></li>
-                        <li><a href="">Плееры</a></li>
-                        <li><a href="">Игровые приставки</a></li>
-                        <li><a href="">Видеорегистраторы и GPS</a></li>
-                        <li><a href="">Аксессуары</a></li>
+
+                        <li>
+                            <a href="">
+                                <i class="icon-imac-2"></i>
+                                <span>Mac</span>
+                            </a>
+                        </li>
+                            
+                        <li>
+                            <a href="">
+                                <i class="icon-watch"></i>
+                                <span>Носимая электроника</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="icon-headphones"></i>
+                                <span>Плееры</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="icon-console"></i>
+                                <span>Игровые приставки</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="icon-camera"></i>
+                                <span>Регистраторы и навигаторы</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="icon-accessories"></i>
+                                <span>Аксессуары</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -279,7 +325,7 @@
                         <ul class="recency-filter">
                             <li class="recency-filter__item recency-filter__item--current"><a href="">все</a></li>
                             <li class="recency-filter__item"><a href="">новые</a></li>
-                            <li class="recency-filter__item"><a href="">б.у.</a></li>
+                            <li class="recency-filter__item"><a href="">б/y</a></li>
                         </ul>
                     </li>
                     <li class="catalog-sorting__item catalog-sorting__item--down"><a href="#">по цене</a></li>
@@ -293,7 +339,7 @@
                                 <img src="./img/item-imgs/item1.jpg" alt="">
                             </div>
                             <div class="shop-item__title">Apple iPhone 4s 16Gb RFB</div>
-                            <div class="shop-item__price">10 990 руб.</div>
+                            <div class="shop-item__price">10 990 р.</div>
                             <div class="shop-item__recency">б/y</div>
                             <div class="shop-item__palette">
                                 <div class="shop-item__color" style="background-color: #ffffff; border: 1px solid #2ecc71;"></div>
@@ -312,7 +358,7 @@
                                 <img src="./img/item-imgs/item2.jpg" alt="">
                             </div>
                             <div class="shop-item__title">Apple iPhone 5 16Gb RFB</div>
-                            <div class="shop-item__price">14 990 руб.</div>
+                            <div class="shop-item__price">14 990 р.</div>
                             <div class="shop-item__recency">б/у</div>
                             <div class="shop-item__promo">акция</div>
                             <div class="shop-item__palette"></div>
@@ -337,7 +383,7 @@
                                 <img src="./img/item-imgs/item4.jpg" alt="">
                             </div>
                             <div class="shop-item__title">Apple Watch 42mm</div>
-                            <div class="shop-item__price">58 990 руб.</div>
+                            <div class="shop-item__price">58 990 р.</div>
                             <div class="shop-item__recency">новый</div>
                             <div class="shop-item__palette">
                                 <div class="shop-item__color" style="background-color: #d2d4d3;"></div>
@@ -354,7 +400,7 @@
                                 <img src="./img/item-imgs/item2.jpg" alt="">
                             </div>
                             <div class="shop-item__title">Apple iPhone 5 16Gb RFB</div>
-                            <div class="shop-item__price">14 990 руб.</div>
+                            <div class="shop-item__price">14 990 р.</div>
                             <div class="shop-item__recency">б/у</div>
                             <div class="shop-item__promo">акция</div>
                             <div class="shop-item__palette"></div>
@@ -367,7 +413,7 @@
                                 <img src="./img/item-imgs/item3.jpg" alt="">
                             </div>
                             <div class="shop-item__title">Иговая консоль PlayStation 4 Pro 1Tb</div>
-                            <div class="shop-item__price">28 500 руб.</div>
+                            <div class="shop-item__price">28 500 р.</div>
                             <div class="shop-item__recency">новый</div>
                             <div class="shop-item__palette"></div>
                         </div>
@@ -379,7 +425,7 @@
                                 <img src="./img/item-imgs/item4.jpg" alt="">
                             </div>
                             <div class="shop-item__title">Apple Watch 42mm</div>
-                            <div class="shop-item__price">58 990 руб.</div>
+                            <div class="shop-item__price">58 990 р.</div>
                             <div class="shop-item__recency">новый</div>
                             <div class="shop-item__palette"></div>
                         </div>
@@ -391,7 +437,7 @@
                                 <img src="./img/item-imgs/item1.jpg" alt="">
                             </div>
                             <div class="shop-item__title">Apple iPhone 4s 16Gb RFB</div>
-                            <div class="shop-item__price">10 990 руб.</div>
+                            <div class="shop-item__price">10 990 р.</div>
                             <div class="shop-item__recency">б/y</div>
                             <div class="shop-item__palette"></div>
                         </div>
@@ -403,7 +449,7 @@
                                 <img src="./img/item-imgs/item4.jpg" alt="">
                             </div>
                             <div class="shop-item__title">Apple Watch 42mm</div>
-                            <div class="shop-item__price">58 990 руб.</div>
+                            <div class="shop-item__price">58 990 р.</div>
                             <div class="shop-item__recency">новый</div>
                             <div class="shop-item__palette"></div>
                         </div>
@@ -415,7 +461,7 @@
                                 <img src="./img/item-imgs/item1.jpg" alt="">
                             </div>
                             <div class="shop-item__title">Apple iPhone 4s 16Gb RFB</div>
-                            <div class="shop-item__price">10 990 руб.</div>
+                            <div class="shop-item__price">10 990 р.</div>
                             <div class="shop-item__recency">б/y</div>
                             <div class="shop-item__palette"></div>
                         </div>
@@ -427,7 +473,7 @@
                                 <img src="./img/item-imgs/item2.jpg" alt="">
                             </div>
                             <div class="shop-item__title">Apple iPhone 5 16Gb RFB</div>
-                            <div class="shop-item__price">14 990 руб.</div>
+                            <div class="shop-item__price">14 990 р.</div>
                             <div class="shop-item__recency">б/у</div>
                             <div class="shop-item__promo">акция</div>
                             <div class="shop-item__palette"></div>
@@ -440,7 +486,7 @@
                                 <img src="./img/item-imgs/item3.jpg" alt="">
                             </div>
                             <div class="shop-item__title">Иговая консоль PlayStation 4 Pro 1Tb</div>
-                            <div class="shop-item__price">28 500 руб.</div>
+                            <div class="shop-item__price">28 500 р.</div>
                             <div class="shop-item__recency">новый</div>
                             <div class="shop-item__palette"></div>
                         </div>
@@ -466,7 +512,7 @@
     <div class="container">
         <div class="logo-n-contacts">
             <a href="">
-                <div class="logo">
+                <div class="logo logo--footer">
                     <img src="img/logo.png" alt="">
                 </div>
             </a>

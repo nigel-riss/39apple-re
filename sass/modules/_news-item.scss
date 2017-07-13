@@ -3,7 +3,8 @@
     position: relative;
 
     // box model
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     height: 400px;
     margin-bottom: 40px;
     padding: 20px;
@@ -20,10 +21,15 @@
     border-radius: 2px;
     overflow: hidden;
 
-    @include atTabletsPortrait {
+    @include atTabletsLandscape {
         // box model
         margin-right: 20px;
-        width: calc(50% - 10px);
+        width: 270px;
+    }
+
+    @include atDesktop {
+        // box model
+        width: 330px;
     }
 
     &--no-r-margin {

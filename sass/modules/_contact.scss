@@ -5,9 +5,14 @@
 
     // box model
     display: none;
+    margin-top: -4px;
+    margin-left: -5px;
     padding-left: 5px;
     padding-bottom: 10px;
     padding-right: 10px;
+
+    // typography
+    text-align: center;
 
     @include atTabletsPortrait {
         // box model
@@ -15,6 +20,9 @@
         padding-right: 10px;
         padding-left: 0;
         padding-bottom: 0;
+
+        // typography
+        text-align: left;
     }
 
     @include atTabletsLandscape {
@@ -39,7 +47,7 @@
 
     &--loc {
         // box model
-        display: inline-block;
+        // display: inline-block;
 
         &:hover .contact__map{
             visibility: visible;
@@ -61,12 +69,13 @@
         // typography
         color: #ffffff;
         font-weight: 300;
-        font-size: 1rem;
-        line-height: 1.5;
+        font-size: 0.8rem;
+        line-height: 2;
 
         @include atTabletsPortrait {
             // typography
             font-size: 0.75rem;
+            line-height: 1.5;
         }
 
         @include atDesktop {
@@ -90,7 +99,7 @@
         position: relative;
 
         // box model
-        display: inline-block;
+        display: none;
         height: 36px;
         width: 36px;
 
@@ -98,6 +107,8 @@
         // background-size: 36px 36px;
 
         @include atTabletsPortrait {
+            // box model
+            display: inline-block;
             height: 24px;
             width: 24px;
 
@@ -233,6 +244,10 @@
                 top: 10px;
                 left: 10px;
                 z-index: 1;
+
+                // box model
+                width: 100%;
+                width: calc(100% - 20px);
             }
         }
     }

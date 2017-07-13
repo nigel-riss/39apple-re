@@ -15,6 +15,13 @@
         z-index: 11;
     }
 
+    &--catalog {
+        @include atTabletsPortrait {
+            // box model
+            display: none;
+        }
+    }
+
     &__list {
         // box model
         display: flex;

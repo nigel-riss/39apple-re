@@ -1,11 +1,13 @@
 .logo {
     // box model
+    display: none;
     padding: 20px 10px;
     width: 225px;
     margin: 0 auto;
 
     @include atTabletsPortrait {
         // box model
+        display: block;
         padding: 20px 0;
         padding-bottom: 10px;
         width: 337px;
@@ -29,5 +31,30 @@
         // box model
         display: block;
         width: 100%;
+    }
+
+    &--footer {
+        // box model
+        display: block;
+    }
+
+    &--small {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        width: 63px;
+        padding-left: 3px;
+        padding-bottom: 10px;
+
+        img {
+            // box model
+            display: block;
+            width: 100%;
+        }
+
+        @include atTabletsPortrait {
+            // box model
+            display: none;
+        }
     }
 }

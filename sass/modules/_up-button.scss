@@ -6,19 +6,25 @@
     z-index: 9999;
 
     // box model
-    padding: 10px 20px;
+    // padding: 10px 20px;
+    padding-top: 15px;
+    height: 40px;
+    width: 40px;
 
     // typography
+    font-size: 0;
     text-align: center;
 
     // visual
     background-color: #ffffff;
-    border-radius: 20px;
+    // border-radius: 20px;
+    border-radius: 50%;
     box-shadow: 0 2px 7px 0 rgba($copyColor, 0.54);
 
     img {
         // box model
         width: 22px;
-        padding-right: 5px;
+        // padding-right: 5px;
+        padding: 0 2px;
     }
 }

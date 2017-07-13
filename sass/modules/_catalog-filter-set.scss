@@ -4,6 +4,7 @@
 
     // visual
     border-bottom: 1px solid #eeeeee;
+    // background-color: #eeeeee;
 
     &__title {
         // box model
@@ -51,6 +52,8 @@
         margin: 0;
         padding: 10px 20px;
         padding-bottom: 20px;
+        // padding-left: 5px;
+        // border: 1px solid red;
 
         // visual
         list-style: none;
@@ -62,13 +65,30 @@
         li {
             // box model
             padding: 0;
+            // padding-left: 50px;
+            padding-bottom: 5px;
             // margin-left: -10px;
+            font-size: 0;
+
+            li {
+                // box model
+                padding: 0;
+                margin-left: 30px;
+                font-size: 1rem;
+            }
         }
 
         a {
+            // positioning
+            position: relative;
+
             // box model
             display: block;
             padding: 5px 10px;
+            padding-left: 0;
+            font-size: 1rem;
+            // padding-left: 140;
+            // text-indent: -40px;
 
             &:hover {
                 // typography
@@ -77,6 +97,13 @@
 
                 // visual
                 background-color: $mainGreen;
+            }
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                width: calc(100% - 100px);
+                padding-left: 5px;
             }
         }
 
