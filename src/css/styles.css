@@ -1754,8 +1754,10 @@ p {
       font-size: 0; }
       .catalog-filter-set__filters li li {
         padding: 0;
-        margin-left: 30px;
+        margin-left: -2px;
         font-size: 1rem; }
+        .catalog-filter-set__filters li li a {
+          padding-left: 10px; }
     .catalog-filter-set__filters a {
       position: relative;
       display: block;
