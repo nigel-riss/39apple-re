@@ -1,4 +1,9 @@
 .contacts {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+
     @include atTabletsPortrait {
         // box model
         display: block;
@@ -15,6 +20,11 @@
         text-align: left;
     }
 
+    @include atDesktop {
+        // box model
+        padding-top: 5px;
+    }
+
     &--footer {
         // box model
         display: block;
@@ -22,7 +32,20 @@
         @include atDesktop {
             float: left;
             margin-left: -30px;
-            margin-top: 14px;
+            margin-top: 6px;
+        }
+
+        .contact {
+            display: block;
+
+            &__icon {
+                // box model
+                display: inline-block;
+            }
+
+            @include atTabletsPortrait {
+                display: inline-block;
+            }
         }
     }
 }

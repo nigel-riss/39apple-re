@@ -1,15 +1,38 @@
 .section {
+    // positioning
+    position: relative;
+
     // box model
     padding: 25px 0;
 
     @include clearfix;
 
+    &__content {
+        &--flex {
+            @include atTabletsLandscape {
+                // box model
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+        }
+
+        &--center {
+            // typography
+            text-align: center;
+        }
+    }
+
+    &--no-p {
+        @include atTabletsPortrait {
+            // box model
+            padding: 0;
+            margin-bottom: -20px;
+        }
+    }
+
     &--news {
-        // box model
-        // display: flex;
-        // justify-content: space-between;
-        // flex-wrap: wrap;
-        // width: 100%;
+        //typo
         text-align: center;
 
         @include atTabletsLandscape {
@@ -104,6 +127,7 @@
         height: 100vh;
         float: left;
         padding-top: 80px;
+        margin-bottom: 10px;
 
         // visual
         background-color: #fff;
@@ -161,6 +185,9 @@
     }
 
     &__header {
+        // positioning
+        position: relative;
+        
         // box model
         margin-bottom: 10px;
         padding-bottom: 10px;
@@ -209,6 +236,45 @@
         color: #97a3ab;
         font-size: 1rem;
         text-align: left;
+    }
+
+    &__all-link {
+        // box model
+        display: none;
+
+        @include atTabletsPortrait {
+            // positioning
+            position: absolute;
+            top: 10px;
+            right: 0;
+
+            // box model
+            display: block;
+            padding: 5px 15px;
+
+            // visual
+            border: 1px solid rgba($mainGreen, 0.4);
+            border-radius: 16px;
+
+            &::after {
+                content: " →";
+
+                display: inline-block;
+                vertical-align: top;
+                margin-top: -1px;
+                padding-left: 5px;
+            }
+
+            &:hover {
+                // typography
+                color: #ffffff;
+                text-decoration: none;
+
+                // visual
+                background-color: $mainGreen;
+                transition: all 0.3s ease-out;
+            }
+        }
     }
 
     &__text {

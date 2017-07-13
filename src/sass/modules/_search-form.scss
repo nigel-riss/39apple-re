@@ -3,13 +3,14 @@
     position: relative;
 
     // box model
-    margin: 0 auto;
+    display: inline-block;
+    // margin: 0 auto;
     margin-bottom: 15px;
+    width: calc(100% - 60px);
     // border: 1px solid red;
 
     @include atTabletsPortrait {
         // box model
-        display: inline-block;
         vertical-align: top;
         width: 390px;
         // typography
@@ -53,6 +54,11 @@
 
             // typography
             text-align: center;
+        }
+
+        &:focus::placeholder {
+            // typography
+            font-size: 0;
         }
     }
 

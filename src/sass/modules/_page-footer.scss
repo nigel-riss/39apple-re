@@ -5,12 +5,15 @@
 
     // box model
     width: 100%;
-    padding-bottom: 25px;
+    padding-bottom: 75px;
 
     // visual
     background-color: $mainGreen;
 
     @include atTabletsLandscape {
+        // box model
+        padding-bottom: 25px;
+
         // visual
         background-image: linear-gradient(to right, $mainGreen, $secondaryGreen);
     }
@@ -31,6 +34,9 @@
             margin-left: -10px;
 
             img {
+                // box model
+                width: 250px;
+
                 // visual
                 border: 1px solid #ffffff;
             }
