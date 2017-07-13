@@ -82,6 +82,14 @@
             background-color: #ffffff;
         }
 
+        &.special {
+            // typography
+            // color: $accent;
+            
+            // visual
+            background-color: $accent;
+        }
+
         @include atTabletsPortrait {
             // box model
             padding: 6px 12px;
