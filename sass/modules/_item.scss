@@ -89,6 +89,9 @@
         }
 
         h3 {
+            // box model
+            margin-bottom: 10px;
+
             // typography
             color: $mainGreen;
             font-weight: 400;
@@ -132,16 +135,28 @@
     &__price {
         // box model
         display: inline-block;
-        padding: 10px 20px;
+        padding: 5px 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+
+        // typography
+        color: $darkBlue;
+        color: $marine;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    &__caution {
+        // box model
+        padding: 10px 15px;
 
         // typography
         color: #ffffff;
-        font-size: 1rem;
-        font-weight: 300;
+        font-size: 12px !important;
+        font-weight: 400;
 
         // visual
         background-color: $mainGreen;
-        border-radius: 19px;
     }
 
     &__palette {

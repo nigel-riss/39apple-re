@@ -10,7 +10,7 @@ body {
     // box model
     box-sizing: border-box;
     min-height: 100%;
-    padding-bottom: 320px;
+    // padding-bottom: 320px;
 
     // typography
     color: $copyColor;
@@ -21,12 +21,12 @@ body {
 
     @include atTabletsPortrait {
         // box model
-        padding-bottom: 200px;
+        // padding-bottom: 200px;
     }
 
     @include atDesktop {
         // box model
-        padding-bottom: 344px;
+        // padding-bottom: 344px;
 
         &::before {
             content: "";
