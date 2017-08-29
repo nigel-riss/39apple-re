@@ -1607,6 +1607,7 @@ p {
 
 .button {
   display: inline-block;
+  margin: 5px 0;
   padding: 13px 30px;
   padding-top: 12px;
   padding-bottom: 14px;
