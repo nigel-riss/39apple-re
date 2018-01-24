@@ -759,7 +759,7 @@ p {
         font-size: 1.25rem; } }
     @media (min-width: 1100px) {
       .main-nav a {
-        padding: 6px 15px;
+        padding: 6px 13px;
         padding-top: 4px; } }
     .main-nav a:hover {
       color: #04b004;
