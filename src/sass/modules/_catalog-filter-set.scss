@@ -116,4 +116,25 @@
             list-style: disc;
         }
     }
+
+}
+
+// icon patch
+
+.catalog-filter-set span.catalog-filter-set__icon {
+    // box model
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    margin-left: 5px;
+
+    // visual
+    background-color: $mainGreen;
+    border-radius: 50%;
+
+    img {
+        // box model
+        height: 100%;
+    }
 }
