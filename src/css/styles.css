@@ -1711,6 +1711,9 @@ p {
   .repair-nav a:hover svg path {
     fill: #04b004; }
 
+.repair-item {
+  display: flex; }
+
 .catalog-items {
   display: flex;
   justify-content: space-around;
